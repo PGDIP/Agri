@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!--link rel="stylesheet" type="text/css" href= static css/homepage.css -->
+    <link rel="stylesheet" type="text/css" href={% static 'css/default.min.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/index.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/news.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'css/homepage.css' %}>
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src={% static 'js/lib/amazeui.min.js' %}></script>
+    <script src={% static 'js/lib/jquery.min.js' %}></script>
+    <script src={% static 'js/lib/main.min.js' %}></script>
+    <script src={% static 'js/lib/iscroll-probe.js' %}></script>
+    <script src={% static 'js/lib/handlebars.min.js' %}></script>
+    <title>果农帮新闻推荐系统</title>
+</head>
+
+
+<body>  <!--页面背景色-->
+
+
+<div class="text-center">
+    <img src="/static/img/news.png" alt="logo" id="image" class="text-center"/>
+    <ul id="result" class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="/index">主页</a></li>
+        <li role="presentation"><a href="/news">资讯</a></li>
+        <li role="presentation"><a href="/weather">天气</a></li>
+        <li role="presentation"><a href="/class_2">病虫防治</a></li>
+        <li role="presentation" class="active"><a href="/class_3">果蔬种植</a></li>
+        <li role="presentation"><a href="/class_4">市场价格</a></li>
+        <li role="presentation"><a href="/class_5">政策法规</a></li>
+        {% ifequal user_name None %}
+            <li class="pull-right " role="presentation"><a href="/login"> 登录 </a></li>
+            <li class="pull-right " role="presentation"><a href="/register"> 注册 </a></li>
+        {% else %}
+            <li role="presentation"><a href="/history">历史浏览</a></li>
+            <li role="presentation"><a href="/myRecommend">我的推荐</a></li>
+            <li class="pull-right " role="presentation"><a href="/subLogout"> 登出 </a></li>
+            <li class="pull-right " role="presentation"><a href="#"> {{ user_name }} </a></li>
+        {% endifequal %}
+    </ul>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+</nav>
+
+
+{% block content %}{% endblock %}
+
+
+</body>
+
+{% block script %}{% endblock %}
+</html>
+
+
+

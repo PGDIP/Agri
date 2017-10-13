@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href={% static 'css/homepage.css' %}>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src={% static 'js/my_js.js' %}></script>
+    <link rel="stylesheet" type="text/css" href={% static 'css/homepage.css' %}>
+    <title>测试样例</title>
+</head>
+<body>
+
+<div class="bm_c xld">
+    {% for news in news_list %}
+        <dl class="bbda cl">
+            <dt class="xs2"><a class="xi2">{{ news.news.title }}</a>
+            </dt>
+            <dd class="xs2 cl">
+                <div class="atc"><a title={{ news.news.title }}><img
+                        src={% static 'img/news.png' %} alt={{ news.news.title }} class="tn"></a>
+
+                </div>
+            <div class="limit">{{ news.news.content }}</div>
+            </dd>
+            <dd> 分类: <label><a class="xi2">梨树病虫害防治</a></label>&nbsp;&nbsp;
+            </dd>
+        </dl>
+    {% endfor %}
+</div>
+</body>
+
+<script>
+
+    $(document).ready(function () {
+//限制字符个数
+        $(".limit").each(function () {
+            var maxwidth = 100;
+            if ($(this).text().length > maxwidth) {
+                $(this).text($(this).text().substring(0, maxwidth));
+                $(this).html($(this).html()+'...')
+                ;
+            }
+        });
+    });
+
+
+</script>
+-->
+</html>

@@ -1,0 +1,6978 @@
+[21/Aug/2017 10:48:25] "GET /weather/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:48:27] "GET /class_2/ HTTP/1.1" 200 300545
+[21/Aug/2017 10:48:27] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:48:38] "GET /class_5/ HTTP/1.1" 200 227315
+[21/Aug/2017 10:48:39] "GET /index/ HTTP/1.1" 200 1814
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:47:07
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+class_2 ......
+weather ......
+get_min_max_degree .......
+weather ......
+get_min_max_degree .......
+class_2 ......
+class_5 ......
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 10:49:31] "GET /weather/ HTTP/1.1" 200 1814
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:49:10
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 10:49:42] "GET /weather/ HTTP/1.1" 200 3592
+[21/Aug/2017 10:49:43] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:49:45] "GET /weather/ HTTP/1.1" 200 3592
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:49:41
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:49:51
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:50:21
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 10:50:28] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:50:29] "GET /weather/ HTTP/1.1" 200 3592
+[21/Aug/2017 10:50:34] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:50:36] "GET /weather/ HTTP/1.1" 200 3592
+[21/Aug/2017 10:53:26] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 10:53:28] "GET /weather/ HTTP/1.1" 200 5098
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:50:27
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+[21/Aug/2017 10:54:12] "GET /weather/ HTTP/1.1" 200 4773
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 10:56:30] "GET /weather/ HTTP/1.1" 200 5194
+[21/Aug/2017 10:59:19] "GET /weather/ HTTP/1.1" 200 5290
+[21/Aug/2017 11:00:27] "GET /weather/ HTTP/1.1" 200 5298
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 10:54:34
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+[21/Aug/2017 11:01:18] "GET /weather/ HTTP/1.1" 200 5330
+[21/Aug/2017 11:03:03] "GET /weather/ HTTP/1.1" 200 4324
+[21/Aug/2017 11:04:26] "GET /weather/ HTTP/1.1" 200 4329
+[21/Aug/2017 11:04:29] "GET /weather/ HTTP/1.1" 200 4329
+[21/Aug/2017 11:04:34] "GET /class_2/ HTTP/1.1" 200 300545
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data[21/Aug/2017 11:04:35] "GET /weather/ HTTP/1.1" 200 4329
+[21/Aug/2017 11:05:34] "GET /weather/ HTTP/1.1" 200 4327
+[21/Aug/2017 11:07:12] "GET /weather/ HTTP/1.1" 200 5025
+_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has[21/Aug/2017 11:07:32] "GET /weather/ HTTP/1.1" 200 5025
+[21/Aug/2017 11:07:51] "GET /weather/ HTTP/1.1" 200 5037
+[21/Aug/2017 11:08:42] "GET /weather/ HTTP/1.1" 200 5181
+ content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 11:09:26
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 11:09:37] "GET /weather/ HTTP/1.1" 200 5054
+[21/Aug/2017 11:10:19] "GET /weather/ HTTP/1.1" 200 5174
+[21/Aug/2017 11:10:39] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:10:45] "GET /class_2/ HTTP/1.1" 200 300545
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 11:09:34
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+h[21/Aug/2017 11:10:46] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:10:58] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:11:02] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:11:08] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-21 11:11:08,936] - Broken pipe from ('159.226.193.227', 50844)
+
+[21/Aug/2017 11:11:10] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-21 11:11:10,187] - Broken pipe from ('159.226.193.227', 50846)
+
+[21/Aug/2017 11:11:10] "GET /class_4/ HTTP/1.1" 200 95604
+[21/Aug/2017 11:11:11] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:11:12] "GET /class_5/ HTTP/1.1" 200 227315
+[2017-08-21 11:11:12,193] - Broken pipe from ('159.226.193.227', 50854)
+
+[21/Aug/2017 11:11:13] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:11:14] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:11:17] "GET /register/ HTTP/1.1" 200 3576
+[21/Aug/2017 11:11:22] "POST /subRegister/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:11:28] "GET /index/ HTTP/1.1" 200 1814
+as content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+None on None None asda ddds
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+b[21/Aug/2017 11:11:29] "GET /weather/ HTTP/1.1" 200 5294
+[21/Aug/2017 11:11:30] "GET /register/ HTTP/1.1" 200 3576
+[21/Aug/2017 11:11:35] "POST /subRegister/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:11:36] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:11:37] "GET /weather/ HTTP/1.1" 200 5427
+[21/Aug/2017 11:12:21] "GET /weather/ HTTP/1.1" 200 5500
+[21/Aug/2017 11:12:22] "GET /index/ HTTP/1.1" 200 1949
+uild_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+None on None None aaa ddds
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+[21/Aug/2017 11:12:24] "GET /weather/ HTTP/1.1" 200 5500
+[21/Aug/2017 11:14:03] "GET /weather/ HTTP/1.1" 200 5245
+[21/Aug/2017 11:14:59] "GET /weather/ HTTP/1.1" 200 5239
+[21/Aug/2017 11:15:26] "GET /weather/ HTTP/1.1" 200 4976
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has cont[21/Aug/2017 11:15:44] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:15:47] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:15:54] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:15:56] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:16:24] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:16:47] "GET /index/ HTTP/1.1" 200 1949
+ent  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .[21/Aug/2017 11:16:49] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:16:50] "GET /class_2/ HTTP/1.1" 200 300580
+[21/Aug/2017 11:16:51] "GET /class_4/ HTTP/1.1" 200 95689
+[21/Aug/2017 11:16:53] "GET /history/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:16:55] "GET /class_5/ HTTP/1.1" 200 227438
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:16:55] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab263&user_name=aaa HTTP/1.1" 500 14390
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:16:56] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab263&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:16:57] "GET /history/ HTTP/1.1" 200 36880
+[21/Aug/2017 11:16:59] "GET /class_5/ HTTP/1.1" 200 227438
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:16:59] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab267&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:17:01] "GET /history/ HTTP/1.1" 200 50236
+[21/Aug/2017 11:17:02] "GET /myRecommend/ HTTP/1.1" 200 167677
+[21/Aug/2017 11:17:03] "GET /history/ HTTP/1.1" 200 50236
+[21/Aug/2017 11:17:06] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:17:06,986] - Broken pipe from ('159.226.193.227', 51609)
+
+[21/Aug/2017 11:17:07] "GET /history/ HTTP/1.1" 200 50236
+[21/Aug/2017 11:17:07] "GET /myRecommend/ HTTP/1.1" 200 167677
+[2017-08-21 11:17:07,603] - Broken pipe from ('159.226.193.227', 51615)
+
+[21/Aug/2017 11:17:12] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:17:12,254] - Broken pipe from ('159.226.193.227', 51621)
+
+[21/Aug/2017 11:17:12] "GET /history/ HTTP/1.1" 200 50236
+[21/Aug/2017 11:17:16] "GET /class_3/ HTTP/1.1" 200 551881
+[21/Aug/2017 11:17:17] "GET /history/ HTTP/1.1" 200 50236
+[21/Aug/2017 11:17:19] "GET /class_5/ HTTP/1.1" 200 227438
+[21/Aug/2017 11:17:19] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:17:19,538] - Broken pipe from ('159.226.193.227', 51570)
+
+[21/Aug/2017 11:17:19] "GET /class_4/ HTTP/1.1" 200 95689
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:17:20] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab240&user_name=aaa HTTP/1.1" 500 14390
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:17:21] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab240&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:17:22] "GET /class_5/ HTTP/1.1" 200 227438
+[2017-08-21 11:17:22,097] - Broken pipe from ('159.226.193.227', 51575)
+
+[21/Aug/2017 11:17:22] "GET /history/ HTTP/1.1" 200 54022
+[21/Aug/2017 11:17:26] "GET /myRecommend/ HTTP/1.1" 200 167677
+[21/Aug/2017 11:17:27] "GET /history/ HTTP/1.1" 200 54022
+[21/Aug/2017 11:17:29] "GET /myRecommend/ HTTP/1.1" 200 167677
+[21/Aug/2017 11:17:31] "GET /history/ HTTP/1.1" 200 54022
+[21/Aug/2017 11:17:32] "GET /class_5/ HTTP/1.1" 200 227438
+[21/Aug/2017 11:17:33] "GET /class_5/ HTTP/1.1" 200 227438
+[2017-08-21 11:17:33,265] - Broken pipe from ('159.226.193.227', 51596)
+
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:17:33] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab269&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:17:35] "GET /history/ HTTP/1.1" 200 68380
+[21/Aug/2017 11:17:38] "GET /class_5/ HTTP/1.1" 200 227438
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:17:39] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab26a&user_name=aaa HTTP/1.1" 500 14390
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:17:40] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab26a&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:17:41] "GET /myRecommend/ HTTP/1.1" 200 122326
+[21/Aug/2017 11:17:43] "GET /history/ HTTP/1.1" 200 106201
+[21/Aug/2017 11:17:45] "GET /class_5/ HTTP/1.1" 200 227438
+[21/Aug/2017 11:17:46] "GET /class_2/ HTTP/1.1" 200 300580
+[2017-08-21 11:17:46,487] - Broken pipe from ('159.226.193.227', 51715)
+
+[21/Aug/2017 11:17:47] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:17:47,359] - Broken pipe from ('159.226.193.227', 51719)
+
+[21/Aug/2017 11:17:47] "GET /class_4/ HTTP/1.1" 200 95689
+[21/Aug/2017 11:17:50] "GET /class_2/ HTTP/1.1" 200 300580
+[21/Aug/2017 11:17:52] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:18:03] "GET /index/ HTTP/1.1" 200 1949
+......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+history ......
+class_5 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab263 aaa
+count_click_times ...... 
+59994ca5ba63100bed8ab263 aaa
+history ......
+class_5 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab267 aaa
+class_5 ......
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab267']
+history ......
+class_3 ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab267']
+history ......
+class_3 ......
+history ......
+class_3 ......
+history ......
+class_5 ......
+class_4 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab240 aaa
+count_click_times ...... 
+59994ca5ba63100bed8ab240 aaa
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab240', u'59994ca5ba63100bed8ab267']
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab240', u'59994ca5ba63100bed8ab267']
+history ......
+class_5 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab269 aaa
+history ......
+class_5 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab26a aaa
+count_click_times ...... 
+59994ca5ba63100bed8ab26a aaa
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab269', u'59994ca5ba63100bed8ab240', u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab26a', u'59994ca5ba63100bed8ab267']
+history ......
+class_5 ......
+class_2 ......
+class_3 ......
+class_4 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......[21/Aug/2017 11:18:04] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:18:08] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:18:09] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:18:14] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:18:16] "GET /weather/ HTTP/1.1" 200 4976
+
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has[21/Aug/2017 11:18:17] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:18:19] "GET /class_2/ HTTP/1.1" 200 300580
+[21/Aug/2017 11:18:23] "GET /history/ HTTP/1.1" 200 106201
+[21/Aug/2017 11:18:28] "GET /class_2/ HTTP/1.1" 200 300580
+[2017-08-21 11:18:28,280] - Broken pipe from ('159.226.193.227', 51812)
+
+[21/Aug/2017 11:18:31] "GET /class_3/ HTTP/1.1" 200 551881
+[21/Aug/2017 11:18:32] "GET /history/ HTTP/1.1" 200 106201
+[21/Aug/2017 11:18:35] "GET /class_2/ HTTP/1.1" 200 300580
+[21/Aug/2017 11:18:39] "GET /class_3/ HTTP/1.1" 200 551881
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:18:39] "GET /count_click_times/?news_id=59994ca5ba63100bed8ab1e5&user_name=aaa HTTP/1.1" 500 14390
+[21/Aug/2017 11:18:41] "GET /history/ HTTP/1.1" 200 111838
+[21/Aug/2017 11:18:46] "GET /class_3/ HTTP/1.1" 200 551881
+[21/Aug/2017 11:18:47] "GET /history/ HTTP/1.1" 200 111838
+[21/Aug/2017 11:18:50] "GET /class_4/ HTTP/1.1" 200 95689
+[21/Aug/2017 11:18:51] "GET /class_5/ HTTP/1.1" 200 227438
+[21/Aug/2017 11:18:52] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:18:52,593] - Broken pipe from ('159.226.193.227', 51792)
+
+[21/Aug/2017 11:18:53] "GET /history/ HTTP/1.1" 200 111838
+[21/Aug/2017 11:18:54] "GET /myRecommend/ HTTP/1.1" 200 129803
+[21/Aug/2017 11:18:57] "GET /class_4/ HTTP/1.1" 200 95689
+[21/Aug/2017 11:18:59] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:19:00] "GET /class_2/ HTTP/1.1" 200 300580
+[2017-08-21 11:19:00,233] - Broken pipe from ('159.226.193.227', 51885)
+
+[21/Aug/2017 11:19:02] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:19:04] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:19:28] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:19:28,689] - Broken pipe from ('159.226.193.227', 51882)
+
+ content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+history ......
+class_2 ......
+class_3 ......
+history ......
+class_2 ......
+class_3 ......
+count_click_times ...... 
+59994ca5ba63100bed8ab1e5 aaa
+history ......
+class_3 ......
+history ......
+class_4 ......
+class_5 ......
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'59994ca5ba63100bed8ab269', u'59994ca5ba63100bed8ab240', u'59994ca5ba63100bed8ab1e5', u'59994ca5ba63100bed8ab263', u'59994ca5ba63100bed8ab26a', u'59994ca5ba63100bed8ab267']
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 11:21:34
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+/usr/local/lib/python2.7/dist-packages/statsmodels/compat/pandas.py:56: FutureWarning: The pandas.core.datetools module is deprecated and will be removed in a future version. Please use the pandas.tseries module instead.
+  from pandas.core import datetools
+[21/Aug/2017 11:22:00] "GET /index/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:22:01] "GET /weather/ HTTP/1.1" 200 4976
+[21/Aug/2017 11:22:03] "GET /class_2/ HTTP/1.1" 200 300580
+[21/Aug/2017 11:22:04] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-21 11:22:04,591] - Broken pipe from ('159.226.193.227', 52245)
+
+[21/Aug/2017 11:22:05] "GET /class_4/ HTTP/1.1" 200 79036
+[21/Aug/2017 11:22:06] "GET /class_5/ HTTP/1.1" 200 227438
+[21/Aug/2017 11:22:06] "GET /history/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:22:09] "GET /myRecommend/ HTTP/1.1" 200 1949
+[21/Aug/2017 11:22:10] "GET /subLogout/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:22:12] "GET /login/ HTTP/1.1" 200 2615
+[21/Aug/2017 11:22:18] "POST /subLogin/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:22:20] "GET /register/ HTTP/1.1" 200 3576
+[21/Aug/2017 11:22:26] "POST /subRegister/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:28] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:32] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:36] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:22:36,725] - Broken pipe from ('159.226.193.227', 52317)
+
+[21/Aug/2017 11:22:37] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:38] "GET /class_4/ HTTP/1.1" 200 79138
+[21/Aug/2017 11:22:41] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:44] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:48] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:52] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:52] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:22:52,479] - Broken pipe from ('159.226.193.227', 52354)
+
+[21/Aug/2017 11:22:56] "GET /class_3/ HTTP/1.1" 200 552083
+[21/Aug/2017 11:22:57] "GET /history/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:22:58] "GET /class_4/ HTTP/1.1" 200 79138
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:22:58] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=admin HTTP/1.1" 500 14396
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:22:59] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=admin HTTP/1.1" 500 14396
+[21/Aug/2017 11:23:00] "GET /history/ HTTP/1.1" 200 3633
+[21/Aug/2017 11:23:01] "GET /class_5/ HTTP/1.1" 200 227464
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:23:02] "GET /count_click_times/?news_id=599ac253ba63100844f00f87&user_name=admin HTTP/1.1" 500 14396
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:23:02] "GET /count_click_times/?news_id=599ac253ba63100844f00f87&user_name=admin HTTP/1.1" 500 14396
+[21/Aug/2017 11:23:03] "GET /history/ HTTP/1.1" 200 38470
+[21/Aug/2017 11:23:07] "GET /class_2/ HTTP/1.1" 200 300782
+[21/Aug/2017 11:23:07] "GET /history/ HTTP/1.1" 200 38470
+[21/Aug/2017 11:23:08] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:23:08,721] - Broken pipe from ('159.226.193.227', 52330)
+
+[21/Aug/2017 11:23:09] "GET /history/ HTTP/1.1" 200 38470
+[21/Aug/2017 11:23:12] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:23:12,049] - Broken pipe from ('159.226.193.227', 52309)
+
+[21/Aug/2017 11:23:12] "GET /class_2/ HTTP/1.1" 200 300782
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[21/Aug/2017 11:23:13] "GET /count_click_times/?news_id=599ac253ba63100844f00e9b&user_name=admin HTTP/1.1" 500 14396
+[21/Aug/2017 11:23:14] "GET /history/ HTTP/1.1" 200 41249
+[21/Aug/2017 11:23:14] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:23:14,482] - Broken pipe from ('159.226.193.227', 52347)
+
+[21/Aug/2017 11:23:20] "GET /myRecommend/ HTTP/1.1" 200 119358
+[21/Aug/2017 11:23:20] "GET /class_3/ HTTP/1.1" 200 552083
+[2017-08-21 11:23:20,881] - Broken pipe from ('159.226.193.227', 52338)
+
+[21/Aug/2017 11:23:23] "GET /weather/ HTTP/1.1" 200 4978
+[21/Aug/2017 11:23:27] "GET /index/ HTTP/1.1" 200 1951
+[21/Aug/2017 11:23:28] "GET /index/ HTTP/1.1" 200 1951
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 21, 2017 - 11:21:47
+Django version 1.11.4, using settings 'AgriculturalRecommendation.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+history ......
+myRecommend ......
+subLogout ......
+subLogin ......
+on None None None admin admin666
+history ......
+class_3 ......
+history ......
+class_3 ......
+class_4 ......
+history ......
+class_3 ......
+history ......
+class_3 ......
+history ......
+class_3 ......
+history ......
+class_3 ......
+history ......
+class_3 ......
+history ......
+class_4 ......
+count_click_times ...... 
+599ac253ba63100844f00f53 admin
+count_click_times ...... 
+599ac253ba63100844f00f53 admin
+history ......
+class_5 ......
+count_click_times ...... 
+599ac253ba63100844f00f87 admin
+count_click_times ...... 
+599ac253ba63100844f00f87 admin
+history ......
+class_2 ......
+history ......
+history ......
+class_2 ......
+count_click_times ...... 
+599ac253ba63100844f00e9b admin
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00e9b', u'599ac253ba63100844f00f87', u'599ac253ba63100844f00f53']
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content [21/Aug/2017 11:23:29] "GET /weather/ HTTP/1.1" 200 4978
+[21/Aug/2017 11:23:31] "GET /subLogout/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:23:39] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:23:40] "GET /weather/ HTTP/1.1" 200 4843
+[21/Aug/2017 11:23:41] "GET /index/ HTTP/1.1" 200 1814
+[21/Aug/2017 11:23:42] "GET /weather/ HTTP/1.1" 200 4843
+[21/Aug/2017 12:24:44] code 400, message Bad request syntax ('JDWP-Handshake')
+[21/Aug/2017 12:24:44] "JDWP-Handshake" 400 -
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add u'www.baidu.com' to ALLOWED_HOSTS.
+[21/Aug/2017 15:11:27] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60893
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[21/Aug/2017 15:11:27] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 500 59
+[2017-08-21 15:11:27,022] - Broken pipe from ('80.82.78.38', 47904)
+
+Invalid HTTP_HOST header: '47.52.64.172:8000'. You may need to add u'47.52.64.172' to ALLOWED_HOSTS.
+[21/Aug/2017 16:56:03] "GET / HTTP/1.1" 400 60431
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[21/Aug/2017 16:56:03] "GET / HTTP/1.1" 500 59
+[2017-08-21 16:56:03,397] - Broken pipe from ('47.93.112.232', 19249)
+
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add u'www.baidu.com' to ALLOWED_HOSTS.
+[21/Aug/2017 17:39:56] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60896
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[21/Aug/2017 17:39:56] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 500 59
+[2017-08-21 17:39:56,310] - Broken pipe from ('172.82.166.210', 44639)
+
+[22/Aug/2017 00:41:05] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 00:41:06] "GET /static/img/news.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[22/Aug/2017 00:41:06] "GET /favicon.ico HTTP/1.1" 404 3772
+[22/Aug/2017 00:41:08] "GET /weather/ HTTP/1.1" 200 4829
+[22/Aug/2017 00:41:22] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 00:41:24] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 00:41:24,430] - Broken pipe from ('159.226.193.227', 49351)
+
+[22/Aug/2017 00:41:24] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 00:53:22] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 00:53:22] "GET /static/img/news.png HTTP/1.1" 304 0
+[22/Aug/2017 00:53:24] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 00:53:27] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 00:53:29] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 00:53:31] "GET /index/ HTTP/1.1" 200 1949
+ 22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+subLogout ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+myRecommend ......
+history ......
+class_5 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+d[22/Aug/2017 00:53:34] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 00:54:00] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 00:54:02] "GET /weather/ HTTP/1.1" 200 4971
+Not Found: /
+[22/Aug/2017 01:00:11] "GET / HTTP/1.0" 404 3721
+Invalid HTTP_HOST header: '39.108.72.193:8000'. You may need to add u'39.108.72.193' to ALLOWED_HOSTS.
+[22/Aug/2017 01:01:31] "GET / HTTP/1.1" 400 60445
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[22/Aug/2017 01:01:31] "GET / HTTP/1.1" 500 59
+[2017-08-22 01:01:31,622] - Broken pipe from ('59.110.6.177', 10833)
+
+[22/Aug/2017 01:16:13] "GET /class_3/ HTTP/1.1" 200 551881
+[22/Aug/2017 01:16:15] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 01:16:19] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 01:16:20] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 01:16:23] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 01:16:25] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 01:16:33] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 01:16:34] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 01:30:33] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 01:30:41] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 01:30:54] "GET /count_click_times/?news_id=599ac253ba63100844f00e96&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:30:56] "GET /count_click_times/?news_id=599ac253ba63100844f00e96&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:00] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 01:31:02] "GET /count_click_times/?news_id=599ac253ba63100844f00f59&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:03] "GET /count_click_times/?news_id=599ac253ba63100844f00f59&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:13] "GET /count_click_times/?news_id=599ac253ba63100844f00f5a&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:16] "GET /count_click_times/?news_id=599ac253ba63100844f00f5a&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:16] "GET /count_click_times/?news_id=599ac253ba63100844f00f5b&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:21] "GET /count_click_times/?news_id=599ac253ba63100844f00f5b&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:22] "GET /count_click_times/?news_id=599ac253ba63100844f00f62&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:35] "GET /count_click_times/?news_id=599ac253ba63100844f00f80&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:31:36] "GET /count_click_times/?news_id=599ac253ba63100844f00f80&user_name=None HTTP/1.1" 200 1814
+ata_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_3 ......
+class_4 ......
+class_5 ......
+history ......
+history ......
+myRecommend ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_4 ......
+class_2 ......
+count_click_times ...... 
+count_click_times ...... 
+class_4 ......
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+class_3 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has conten[22/Aug/2017 01:31:40] "GET /weather/ HTTP/1.1" 200 4838
+[22/Aug/2017 01:31:40] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 01:31:40,671] - Broken pipe from ('159.226.193.227', 51067)
+
+[22/Aug/2017 01:31:49] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 01:31:58] "GET /count_click_times/?news_id=599ac253ba63100844f00ea1&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:03] "GET /count_click_times/?news_id=599ac253ba63100844f00ea1&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:04] "GET /count_click_times/?news_id=599ac253ba63100844f00ea0&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:08] "GET /count_click_times/?news_id=599ac253ba63100844f00ea0&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:12] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 01:32:14] "GET /count_click_times/?news_id=599ac253ba63100844f00f90&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:14] "GET /count_click_times/?news_id=599ac253ba63100844f00f90&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:16] "GET /count_click_times/?news_id=599ac253ba63100844f00f8d&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:19] "GET /count_click_times/?news_id=599ac253ba63100844f00f8d&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 01:32:21] "GET /weather/ HTTP/1.1" 200 4838
+[22/Aug/2017 01:32:47] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 01:32:47,080] - Broken pipe from ('159.226.193.227', 51099)
+
+[22/Aug/2017 01:32:47] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 01:33:09] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 01:33:09,713] - Broken pipe from ('159.226.193.227', 51098)
+
+[22/Aug/2017 01:46:40] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 01:46:42] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 02:02:05] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 02:02:07] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 02:03:52] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 02:04:05] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 02:04:09] "GET /count_click_times/?news_id=599ac253ba63100844f00f54&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 02:04:10] "GET /count_click_times/?news_id=599ac253ba63100844f00f55&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 02:04:11] "GET /count_click_times/?news_id=599ac253ba63100844f00f56&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 02:04:13] "GET /count_click_times/?news_id=599ac253ba63100844f00f57&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 02:04:14] "GET /count_click_times/?news_id=599ac253ba63100844f00f58&user_name=456 HTTP/1.1" 200 1949
+t  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+class_5 ......
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+history ......
+myRecommend ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_4 ......
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  [22/Aug/2017 02:07:19] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 02:07:24] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 02:07:27] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 02:07:34] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 02:12:00] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[22/Aug/2017 02:15:45] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 02:31:42] "GET /class_3/ HTTP/1.1" 200 551881
+[22/Aug/2017 02:31:45] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 02:31:55] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 02:31:58] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 02:32:17] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 02:32:27] "GET /class_3/ HTTP/1.1" 200 551881
+[22/Aug/2017 02:32:42] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 02:32:47] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 02:32:50] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 02:35:10] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 02:38:33] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 02:54:43] "GET /index HTTP/1.1" 301 0
+[22/Aug/2017 02:54:43] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 03:04:18] code 400, message Bad request syntax ('JDWP-Handshake')
+[22/Aug/2017 03:04:18] "JDWP-Handshake" 400 -
+[22/Aug/2017 04:03:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[22/Aug/2017 05:33:20] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 05:33:21] "GET /static/img/news.png HTTP/1.1" 304 0
+30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+myRecommend ......
+history ......
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_3 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_5 ......
+history ......
+class_2 ......
+class_3 ......
+class_2 ......
+myRecommend ......
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_[22/Aug/2017 05:33:29] "GET /weather/ HTTP/1.1" 200 4838
+[22/Aug/2017 05:33:36] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 05:33:39] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 05:33:42] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 05:33:45] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 05:34:08] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 05:34:08,178] - Broken pipe from ('159.226.193.227', 56986)
+
+[22/Aug/2017 05:56:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&\xe0\x00\x00\x00\x00\x00Cookie:')
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/logging/__init__.py", line 861, in emit
+    msg = self.format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 734, in format
+    return fmt.format(record)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/log.py", line 192, in format
+    return super(ServerFormatter, self).format(record)
+  File "/usr/lib/python2.7/logging/__init__.py", line 476, in format
+    raise e
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe0 in position 6: ordinal not in range(128)
+Logged from file basehttp.py, line 124
+[22/Aug/2017 06:17:08] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 06:17:08] "GET /static/img/news.png HTTP/1.1" 304 0
+[22/Aug/2017 06:26:58] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:01] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:04] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:07] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 06:27:08] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 06:27:14] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-22 06:27:14,498] - Broken pipe from ('211.83.242.79', 9915)
+
+[22/Aug/2017 06:27:16] "GET /class_2/ HTTP/1.1" 200 300580
+[22/Aug/2017 06:27:16] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 06:27:23] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:31] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:34] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:27:42] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 06:34:38] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 06:37:25] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 06:42:53] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 06:42:56] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:24:46] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:28:28] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:28:30] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:28:32] "GET /class_5/ HTTP/1.1" 200 227438
+[22/Aug/2017 07:28:33] "GET /class_4/ HTTP/1.1" 200 79036
+[22/Aug/2017 07:28:42] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=456 HTTP/1.1" 200 1949
+[22/Aug/2017 07:28:50] "GET /class_3/ HTTP/1.1" 200 551881
+[2017-08-22 07:28:50,712] - Broken pipe from ('211.83.242.79', 13836)
+
+[22/Aug/2017 07:28:52] "GET /class_2/ HTTP/1.1" 200 300580
+list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+class_2 ......
+history ......
+history ......
+myRecommend ......
+class_5 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+myRecommend ......
+myRecommend ......
+history ......
+class_5 ......
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+history ......
+myRecommend ......
+myRecommend ......
+history ......
+myRecommend ......
+class_5 ......
+class_4 ......
+count_click_times ...... 
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content[22/Aug/2017 07:28:54] "GET /weather/ HTTP/1.1" 200 4971
+[22/Aug/2017 07:29:01] "GET /index/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:29:03] "GET /history/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:29:06] "GET /myRecommend/ HTTP/1.1" 200 1949
+[22/Aug/2017 07:29:15] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 08:38:11] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 08:38:13] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 08:38:15] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 08:38:18] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 08:38:18] "GET /weather/ HTTP/1.1" 200 4838
+[22/Aug/2017 08:38:24] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 08:38:27] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 08:38:30] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 08:38:33] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 08:38:37] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 08:38:38] "GET /weather/ HTTP/1.1" 200 4838
+Invalid HTTP_HOST header: '47.90.82.222:8000'. You may need to add u'47.90.82.222' to ALLOWED_HOSTS.
+[22/Aug/2017 09:04:21] "GET / HTTP/1.1" 400 60432
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[22/Aug/2017 09:04:21] "GET / HTTP/1.1" 500 59
+[2017-08-22 09:04:21,612] - Broken pipe from ('116.62.176.205', 35994)
+
+[22/Aug/2017 09:08:30] "GET /weather/ HTTP/1.1" 200 4838
+  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+history ......
+myRecommend ......
+subLogout ......
+class_5 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_5 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init [22/Aug/2017 10:00:10] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 10:00:24] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 10:00:26] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 10:00:32] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 10:00:42] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 10:01:26] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 10:01:26,232] - Broken pipe from ('159.226.193.227', 65104)
+
+[22/Aug/2017 10:01:27] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 10:01:59] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 10:01:59,313] - Broken pipe from ('159.226.193.227', 65105)
+
+[22/Aug/2017 12:17:02] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 12:17:05] "GET /static/img/news.png HTTP/1.1" 304 0
+[22/Aug/2017 12:17:07] "GET /count_click_times/?news_id=599ac253ba63100844f00e8b&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 12:17:33] "GET /register/ HTTP/1.1" 200 3576
+Invalid HTTP_HOST header: 'www.baidu.com'. You may need to add u'www.baidu.com' to ALLOWED_HOSTS.
+[22/Aug/2017 13:06:46] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 400 60893
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 128, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 217, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 328, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 307, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+[22/Aug/2017 13:06:46] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 500 59
+[2017-08-22 13:06:46,523] - Broken pipe from ('80.82.78.38', 39444)
+
+[22/Aug/2017 13:14:50] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 13:17:01] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:17:05] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 13:17:06] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:17:08] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 13:19:55] "GET /static/img/news.png HTTP/1.1" 200 21393
+[22/Aug/2017 13:19:55] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 13:19:55] "GET /class_5 HTTP/1.1" 301 0
+Not Found: /favicon.ico
+[22/Aug/2017 13:19:56] "GET /favicon.ico HTTP/1.1" 404 3772
+[22/Aug/2017 13:20:01] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 13:20:02] "GET /class_4 HTTP/1.1" 301 0
+[22/Aug/2017 13:20:02] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:20:12] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:20:15] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:20:16] "GET /count_click_times/?news_id=599ac253ba63100844f00f54&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:20:17] "GET /count_click_times/?news_id=599ac253ba63100844f00f54&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:20:18] "GET /class_3 HTTP/1.1" 301 0
+[22/Aug/2017 13:20:20] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 13:20:21] "GET /class_2 HTTP/1.1" 301 0
+[22/Aug/2017 13:20:22] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:20:58] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:21:06] "GET /class_3/ HTTP/1.1" 200 551846
+.......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_4 ......
+class_5 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+count_click_times ...... 
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+class_5 ......
+class_5 ......
+class_4 ......
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+count_click_times ...... 
+class_3 ......
+class_2 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has[22/Aug/2017 13:21:09] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 13:21:09] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:21:13] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:21:20] "GET /count_click_times/?news_id=599ac253ba63100844f00ed1&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:21:23] "GET /count_click_times/?news_id=599ac253ba63100844f00ed1&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:21:33] "GET /login HTTP/1.1" 301 0
+[22/Aug/2017 13:21:33] "GET /login/ HTTP/1.1" 200 2615
+[22/Aug/2017 13:21:36] "GET /register HTTP/1.1" 301 0
+[22/Aug/2017 13:21:36] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 13:21:42] "GET /weather HTTP/1.1" 301 0
+[22/Aug/2017 13:21:43] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 13:21:48] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:21:58] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 13:21:59] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:22:01] "GET /index HTTP/1.1" 301 0
+[22/Aug/2017 13:22:01] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:22:06] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 13:22:07] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:22:19] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:22:21] "GET /static/img/news.png HTTP/1.1" 200 21393
+[22/Aug/2017 13:22:27] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:25:34] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:25:43] "GET /count_click_times/?news_id=599ac253ba63100844f00e8b&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:26:22] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:26:29] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:26:30] "GET /count_click_times/?news_id=599ac253ba63100844f00f53&user_name=None HTTP/1.1" 200 1814
+[22/Aug/2017 13:29:02] "GET /login/ HTTP/1.1" 200 2615
+[22/Aug/2017 13:29:12] "POST /subLogin/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:29:30] "POST /subLogin/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:30:37] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:57:25] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 13:57:50] "GET /index/ HTTP/1.1" 200 1948
+[22/Aug/2017 13:57:50] "GET /static/img/news.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[22/Aug/2017 13:57:50] "GET /favicon.ico HTTP/1.1" 404 3772
+ content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+count_click_times ...... 
+count_click_times ...... 
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_2 ......
+class_2 ......
+class_2 ......
+count_click_times ...... 
+class_4 ......
+count_click_times ...... 
+count_click_times ...... 
+subLogin ......
+subLogin ......
+class_4 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has [22/Aug/2017 13:57:54] "GET /weather/ HTTP/1.1" 200 4963
+[22/Aug/2017 13:57:55] "GET /index/ HTTP/1.1" 200 1948
+[22/Aug/2017 13:57:56] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:57:57] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 13:57:59] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 13:58:00] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 13:58:02] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 13:58:03] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 13:58:11] "POST /subRegister/ HTTP/1.1" 200 1814
+[22/Aug/2017 13:58:14] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 13:58:30] "POST /subRegister/ HTTP/1.1" 200 1955
+[22/Aug/2017 13:58:33] "GET /myRecommend/ HTTP/1.1" 200 1955
+[22/Aug/2017 13:58:34] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 13:58:35] "GET /class_5/ HTTP/1.1" 200 227516
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 13:58:36] "GET /count_click_times/?news_id=599ac253ba63100844f00f8a&user_name=username6 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 13:58:36] "GET /count_click_times/?news_id=599ac253ba63100844f00f8a&user_name=username6 HTTP/1.1" 500 14427
+[22/Aug/2017 13:58:38] "GET /history/ HTTP/1.1" 200 16623
+[22/Aug/2017 13:58:38] "GET /myRecommend/ HTTP/1.1" 200 129625
+[22/Aug/2017 13:58:40] "GET /class_5/ HTTP/1.1" 200 227516
+[22/Aug/2017 13:58:41] "GET /weather/ HTTP/1.1" 200 4831
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 13:58:42] "GET /count_click_times/?news_id=599ac253ba63100844f00f8c&user_name=username6 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 13:58:42] "GET /count_click_times/?news_id=599ac253ba63100844f00f8c&user_name=username6 HTTP/1.1" 500 14427
+[22/Aug/2017 13:58:43] "GET /history/ HTTP/1.1" 200 19829
+[22/Aug/2017 13:58:44] "GET /myRecommend/ HTTP/1.1" 200 185470
+[22/Aug/2017 13:59:19] "GET /history/ HTTP/1.1" 200 19829
+[22/Aug/2017 13:59:21] "GET /class_5/ HTTP/1.1" 200 227516
+[22/Aug/2017 13:59:21] "GET /class_4/ HTTP/1.1" 200 79342
+[22/Aug/2017 13:59:22] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 13:59:22,732] - Broken pipe from ('223.71.153.171', 20950)
+
+content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+subLogout ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_4 ......
+class_5 ......
+on on None None admin admin666
+None None on None username6 123456
+myRecommend ......
+========************** None
+history ......
+class_5 ......
+count_click_times ...... 
+599ac253ba63100844f00f8a username6
+count_click_times ...... 
+599ac253ba63100844f00f8a username6
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8a']
+class_5 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+count_click_times ...... 
+599ac253ba63100844f00f8c username6
+count_click_times ...... 
+599ac253ba63100844f00f8c username6
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8c', u'599ac253ba63100844f00f8a']
+history ......
+class_5 ......
+class_4 ......
+class_3 ......
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has cont[22/Aug/2017 13:59:23] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 13:59:23] "GET /class_2/ HTTP/1.1" 200 301186
+[2017-08-22 13:59:23,953] - Broken pipe from ('223.71.153.171', 18540)
+
+[22/Aug/2017 13:59:24] "GET /index/ HTTP/1.1" 200 1955
+[22/Aug/2017 13:59:43] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 13:59:44] "GET /class_2/ HTTP/1.1" 200 301186
+[2017-08-22 13:59:44,540] - Broken pipe from ('223.71.153.171', 2045)
+
+[22/Aug/2017 13:59:45] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 13:59:45,144] - Broken pipe from ('223.71.153.171', 8259)
+
+[22/Aug/2017 13:59:45] "GET /class_4/ HTTP/1.1" 200 79342
+[22/Aug/2017 13:59:46] "GET /class_5/ HTTP/1.1" 200 227516
+[22/Aug/2017 14:01:29] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 14:08:47] "GET /index/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:14:18] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:14:18] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 14:14:47] "POST /subRegister/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:14:56] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:14:59] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:14:59] "GET /myRecommend/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:15:01] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:15:02] "GET /class_5/ HTTP/1.1" 200 227516
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:15:04] "GET /count_click_times/?news_id=599ac253ba63100844f00f8c&user_name=username1 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:15:05] "GET /count_click_times/?news_id=599ac253ba63100844f00f8c&user_name=username1 HTTP/1.1" 500 14427
+[22/Aug/2017 14:15:07] "GET /history/ HTTP/1.1" 200 5255
+[22/Aug/2017 14:15:11] "GET /myRecommend/ HTTP/1.1" 200 185470
+[22/Aug/2017 14:15:12] "GET /history/ HTTP/1.1" 200 5255
+[22/Aug/2017 14:15:14] "GET /myRecommend/ HTTP/1.1" 200 185470
+[22/Aug/2017 14:15:19] "GET /history/ HTTP/1.1" 200 5255
+[22/Aug/2017 14:15:25] "GET /index/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:15:28] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 14:15:30] "GET /class_2/ HTTP/1.1" 200 301186
+[22/Aug/2017 14:15:36] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 14:15:36,143] - Broken pipe from ('223.71.153.171', 27869)
+
+[22/Aug/2017 14:15:36] "GET /class_4/ HTTP/1.1" 200 79342
+[22/Aug/2017 14:15:38] "GET /class_5/ HTTP/1.1" 200 227516
+ent  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+class_2 ......
+subLogout ......
+None on on None username1 123456
+history ......
+history ......
+myRecommend ......
+========************** None
+history ......
+class_5 ......
+count_click_times ...... 
+599ac253ba63100844f00f8c username1
+count_click_times ...... 
+599ac253ba63100844f00f8c username1
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8c']
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8c']
+history ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has con[22/Aug/2017 14:15:41] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 14:16:02] "GET /class_2/ HTTP/1.1" 200 301186
+[22/Aug/2017 14:16:03] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 14:16:04] "GET /myRecommend/ HTTP/1.1" 200 185470
+[22/Aug/2017 14:16:06] "GET /history/ HTTP/1.1" 200 5255
+[22/Aug/2017 14:18:07] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 14:18:08] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 14:18:08,103] - Broken pipe from ('211.83.242.79', 2217)
+
+[22/Aug/2017 14:18:15] "GET /index/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:18:17] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:18:24] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:18:24] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:18:27] "GET /weather/ HTTP/1.1" 200 4831
+[22/Aug/2017 14:19:07] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 14:19:09] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 14:19:09,755] - Broken pipe from ('223.71.153.171', 11295)
+
+[22/Aug/2017 14:19:10] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 14:19:10,182] - Broken pipe from ('223.71.153.171', 2422)
+
+[22/Aug/2017 14:19:10] "GET /class_4/ HTTP/1.1" 200 78951
+[2017-08-22 14:19:10,483] - Broken pipe from ('223.71.153.171', 29953)
+
+[22/Aug/2017 14:19:11] "GET /class_5/ HTTP/1.1" 200 227315
+[2017-08-22 14:19:11,121] - Broken pipe from ('223.71.153.171', 29550)
+
+[22/Aug/2017 14:19:11] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 14:19:11,767] - Broken pipe from ('223.71.153.171', 29670)
+
+[22/Aug/2017 14:19:11] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 14:19:11,850] - Broken pipe from ('223.71.153.171', 5849)
+
+[22/Aug/2017 14:19:12] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 14:19:14] "GET /class_2/ HTTP/1.1" 200 300545
+[22/Aug/2017 14:19:21] "GET /class_3/ HTTP/1.1" 200 551846
+[22/Aug/2017 14:19:23] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 14:19:23,457] - Broken pipe from ('223.71.153.171', 3021)
+
+[22/Aug/2017 14:19:24] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 14:19:24,102] - Broken pipe from ('223.71.153.171', 21608)
+
+[22/Aug/2017 14:19:24] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 14:19:29] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 14:19:34] "GET /register/ HTTP/1.1" 200 3576
+[22/Aug/2017 14:19:51] "POST /subRegister/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:20:13] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:20:14] "GET /login/ HTTP/1.1" 200 2615
+[22/Aug/2017 14:20:20] "POST /subLogin/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:20:22] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:20:23] "GET /myRecommend/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:20:25] "GET /history/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:20:27] "GET /class_2/ HTTP/1.1" 200 301186
+[2017-08-22 14:20:27,912] - Broken pipe from ('223.71.153.171', 3076)
+
+[22/Aug/2017 14:20:28] "GET /class_4/ HTTP/1.1" 200 79342
+[2017-08-22 14:20:28,308] - Broken pipe from ('223.71.153.171', 27594)
+
+[22/Aug/2017 14:20:28] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 14:20:28,590] - Broken pipe from ('223.71.153.171', 28988)
+
+[22/Aug/2017 14:20:30] "GET /class_5/ HTTP/1.1" 200 227516
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:20:31] "GET /count_click_times/?news_id=599ac253ba63100844f00f8a&user_name=username2 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:20:32] "GET /count_click_times/?news_id=599ac253ba63100844f00f8a&user_name=username2 HTTP/1.1" 500 14427
+[22/Aug/2017 14:20:33] "GET /history/ HTTP/1.1" 200 16623
+[22/Aug/2017 14:20:38] "GET /myRecommend/ HTTP/1.1" 200 129625
+[22/Aug/2017 14:20:39] "GET /history/ HTTP/1.1" 200 16623
+[22/Aug/2017 14:20:43] "GET /myRecommend/ HTTP/1.1" 200 129625
+[22/Aug/2017 14:20:48] "GET /class_4/ HTTP/1.1" 200 79342
+[22/Aug/2017 14:20:49] "GET /class_5/ HTTP/1.1" 200 227516
+[22/Aug/2017 14:20:50] "GET /class_4/ HTTP/1.1" 200 79342
+[2017-08-22 14:20:50,407] - Broken pipe from ('223.71.153.171', 7011)
+
+[22/Aug/2017 14:20:51] "GET /class_5/ HTTP/1.1" 200 227516
+[2017-08-22 14:20:51,221] - Broken pipe from ('223.71.153.171', 2153)
+
+[22/Aug/2017 14:20:51] "GET /myRecommend/ HTTP/1.1" 200 129625
+[22/Aug/2017 14:20:56] "GET /history/ HTTP/1.1" 200 16623
+[22/Aug/2017 14:20:57] "GET /myRecommend/ HTTP/1.1" 200 129625
+tent  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8c']
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+history ......
+class_3 ......
+subLogout ......
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has content  9
+has content  10
+has content  11
+has content  12
+has content  13
+has content  14
+has content  15
+has content  16
+has content  17
+has content  18
+has content  19
+has content  20
+has content  21
+has content  22
+has content  23
+has content  24
+has content  25
+has content  26
+has content  27
+has content  28
+has content  29
+has content  30
+has content  31
+has content  32
+has content  33
+has content  34
+has content  35
+has content  36
+has content  37
+has content  38
+has content  39
+has content  40
+has content  41
+has content  42
+has content  43
+has content  44
+has content  45
+has content  46
+has content  47
+has content  48
+has content  49
+has content  50
+has content  51
+has content  52
+class_2 ......
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+class_2 ......
+class_3 ......
+class_4 ......
+class_2 ......
+class_3 ......
+class_2 ......
+class_3 ......
+class_4 ......
+class_5 ......
+on None on None username2 123456
+subLogout ......
+subLogin ......
+history ......
+myRecommend ......
+========************** None
+history ......
+class_2 ......
+class_4 ......
+class_3 ......
+class_5 ......
+count_click_times ...... 
+599ac253ba63100844f00f8a username2
+count_click_times ...... 
+599ac253ba63100844f00f8a username2
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8a']
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8a']
+class_4 ......
+class_5 ......
+class_4 ......
+class_5 ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8a']
+history ......
+myRecommend ......
+========*****#######*********
+get_K_nearst_love
+========************** [u'599ac253ba63100844f00f8a']
+weather ......
+get_min_max_degree .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+arima_get_pre .......
+data_init .......
+build_model .......
+arima_predict .......
+get_pre_list .......
+paserWeather ......
+has content  0
+has content  1
+has content  2
+has content  3
+has content  4
+has content  5
+has content  6
+has content  7
+has content  8
+has conten[22/Aug/2017 14:20:59] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 14:21:00] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 14:21:00,099] - Broken pipe from ('223.71.153.171', 27204)
+
+[22/Aug/2017 14:21:00] "GET /class_4/ HTTP/1.1" 200 79342
+[2017-08-22 14:21:00,231] - Broken pipe from ('223.71.153.171', 21027)
+
+[22/Aug/2017 14:21:00] "GET /history/ HTTP/1.1" 200 16623
+[22/Aug/2017 14:21:00] "GET /class_5/ HTTP/1.1" 200 227516
+[2017-08-22 14:21:00,506] - Broken pipe from ('223.71.153.171', 12402)
+
+[22/Aug/2017 14:21:01] "GET /myRecommend/ HTTP/1.1" 200 129625
+[22/Aug/2017 14:21:01] "GET /class_5/ HTTP/1.1" 200 227516
+[2017-08-22 14:21:01,543] - Broken pipe from ('223.71.153.171', 30415)
+
+[22/Aug/2017 14:21:01] "GET /class_4/ HTTP/1.1" 200 79342
+[22/Aug/2017 14:21:02] "GET /class_3/ HTTP/1.1" 200 552487
+[2017-08-22 14:21:02,231] - Broken pipe from ('223.71.153.171', 28730)
+
+[22/Aug/2017 14:21:02] "GET /class_2/ HTTP/1.1" 200 301186
+[2017-08-22 14:21:02,770] - Broken pipe from ('223.71.153.171', 19312)
+
+[22/Aug/2017 14:21:02] "GET /class_4/ HTTP/1.1" 200 79342
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:21:03] "GET /count_click_times/?news_id=599ac253ba63100844f00f58&user_name=username2 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:21:04] "GET /count_click_times/?news_id=599ac253ba63100844f00f58&user_name=username2 HTTP/1.1" 500 14427
+[22/Aug/2017 14:21:05] "GET /class_5/ HTTP/1.1" 200 227516
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:21:05] "GET /count_click_times/?news_id=599ac253ba63100844f00f8d&user_name=username2 HTTP/1.1" 500 14427
+Internal Server Error: /count_click_times/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommend_templates.views.count_click_times didn't return an HttpResponse object. It returned None instead.
+[22/Aug/2017 14:21:06] "GET /count_click_times/?news_id=599ac253ba63100844f00f8d&user_name=username2 HTTP/1.1" 500 14427
+[22/Aug/2017 14:21:07] "GET /history/ HTTP/1.1" 200 33283
+[22/Aug/2017 14:21:09] "GET /myRecommend/ HTTP/1.1" 200 186944
+[22/Aug/2017 14:21:13] "GET /index/ HTTP/1.1" 200 1955
+[22/Aug/2017 14:21:15] "GET /weather/ HTTP/1.1" 200 4970
+[22/Aug/2017 14:21:16] "GET /subLogout/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:21:19] "GET /class_5/ HTTP/1.1" 200 227315
+[22/Aug/2017 14:21:19] "GET /class_4/ HTTP/1.1" 200 78951
+[22/Aug/2017 14:21:19] "GET /class_3/ HTTP/1.1" 200 551846
+[2017-08-22 14:21:19,954] - Broken pipe from ('223.71.153.171', 17599)
+
+[22/Aug/2017 14:21:20] "GET /index/ HTTP/1.1" 200 1814
+[22/Aug/2017 14:21:20] "GET /class_2/ HTTP/1.1" 200 300545
+[2017-08-22 14:21:20,643] - Broken pipe from ('223.71.153.171', 29872)
+
+[22/Aug/2017 14:21:20] "GET /index/ HTTP/1.1" 200 1814

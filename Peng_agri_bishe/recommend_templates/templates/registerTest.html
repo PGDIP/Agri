@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+	<title>果农帮新闻推荐系统</title>
+
+{#    <link rel="stylesheet" href="../static/css/main.css" type="text/css">#}
+    <script src = 'http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
+    <script>
+        function register() {
+            $(document).ready(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'registerAjax' %}",
+                    dataType: "json",
+                    data:{
+                        'user':$("#userName").val(),   {# 标签里的 nama 属性 #}
+                        'password' :$("#userPassword").val(),
+                        'age' :$("#userAge").val(),
+                        'email' :$("#userEmail").val()
+                    },
+                    success: function (data) {
+                        if(data.uCodeEmpty == '0'){
+                             $("#isLoginIcon").html('');
+                             $("#isLoginText").html('');
+                        }else {
+                            if(data.uCode == '200'){
+                                if(data.code == '200'){
+                                    $("#isLoginIcon").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
+        {#                            $('#isLoginIcon').append('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');#}
+                                    $("#isLoginText").html(data.msg);
+                                }else if(data.code == '404'){
+                                    $("#isLoginIcon").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center" >');
+                                    $("#isLoginText").html('');
+                                }
+                            }else if(data.uCode == '404'){
+                                $("#isLoginIcon").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
+{#                                $("#isLoginText").html(data.u_msg);#}
+                                alert(data.u_msg)
+                            }
+                        }
+
+                        if(data.pCodeEmpty == '0'){
+                             $("#isLoginIconP").html('');
+                             $("#isLoginTextP").html('');
+                        }else {
+                            if(data.pCode == '200'){
+                                $("#isLoginIconP").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextP").html('');
+                            }else if(data.pCode == '404'){
+                                $("#isLoginIconP").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextP").html(data.p_msg);
+                            }
+                        }
+
+                        if(data.aCodeEmpty == '0'){
+                             $("#isLoginIconA").html('');
+                             $("#isLoginTextA").html('');
+                        }else {
+                             if(data.aCode == '200'){
+                                $("#isLoginIconA").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextA").html('');
+                             }else if(data.aCode == '404'){
+                                $("#isLoginIconA").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextA").html(data.a_msg);
+                             }
+                        }
+
+                        if(data.eCodeEmpty == '0'){
+                             $("#isLoginIconE").html('');
+                             $("#isLoginTextE").html('');
+                        }else {
+                            if(data.eCode == '200'){
+                                $("#isLoginIconE").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextE").html('');
+                            }else if(data.eCode == '404'){
+                                $("#isLoginIconE").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
+                                $("#isLoginTextE").html(data.e_msg);
+                            }
+                        }
+                    },
+                    error: function (jqXHR) {
+                        alert("发生错误了：" + jqXHR.status);
+                    }
+                });
+            })
+        }
+    </script>
+</head>
+{# http://localhost:8000/agriculture_app/loginAjax #}
+<body>
+    <div class="text-center" >
+        <img src="/static/img/news.png" alt="logo" id="image" class="text-center"/>
+		<ul id = "result" class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="/index">主页</a></li>
+			<li role="presentation"><a href="/weather">天气</a></li>
+			<li role="presentation"><a href="/class_2">病虫防治</a></li>
+			<li role="presentation"><a href="/class_3">果蔬种植</a></li>
+			<li role="presentation"><a href="/class_4">市场价格</a></li>
+			<li role="presentation"><a href="/class_5">政策法规</a></li>
+			{% ifequal user_name None %}
+				<li class = "pull-right " role="presentation"> <a href="/login"> 登录 </a> </li>
+				<li class = "pull-right " role="presentation"> <a href="/register"> 注册 </a> </li>
+			{% else %}
+				<li role="presentation"><a href="/history">历史浏览</a></li>
+				<li role="presentation"><a href="/myRecommend">我的推荐</a></li>
+				<li class = "pull-right " role="presentation"> <a href="/subLogout"> 登出 </a> </li>
+				<li class = "pull-right " role="presentation"> <a href="#"> {{ user_name  }} </a> </li>
+			{% endifequal %}
+		</ul>
+	</div>
+	<nav class="navbar navbar-default" role="navigation">
+	</nav>
+
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class = "dropdown-menu-center">
+			<form class="raw" action = "{% url 'register' %}" role="search" method="post">
+				{% csrf_token %}
+				<div class="content" align = "center">
+				    <div class="input-group">
+                        <label>账号：</label><input onchange="register()" id="userName" name="user" class="form-control" maxlength="20" placeholder="用户名或电话号码" required>
+                            <label id="isLoginIcon"></label>
+                            <label id="isLoginText" name="isLoginName"></label><br>
+                            <label >密码：</label><input onchange="register()" id="userPassword" name="password" class="form-control" type="password" placeholder="6~20位密码" maxlength="20" required>
+                            <label id="isLoginIconP"></label>
+                            <label id="isLoginTextP"></label><br>
+                            <label >年龄：</label><input onchange="register()" id="userAge" name="age" class="form-control" type="text">
+                            <label id="isLoginIconA"></label>
+                            <label id="isLoginTextA"></label><br>
+                            <label >邮箱：</label><input onchange="register()" id="userEmail" name="email" class="form-control" type="text">
+                            <label id="isLoginIconE"></label>
+                            <label id="isLoginTextE"></label><br>
+                            <label >地址：</label><input name="address" class="form-control" type="text"><br>
+
+				    </div><!-- /input-group -->
+				    兴趣爱好
+				    <div class="input-group">
+				    	<a class="input-group-addon" href="#">农业新闻</a>
+				        <span class="input-group-addon">
+				            <input type="checkbox" name = "select1" aria-label="...">
+				        </span>
+				    	<a class="input-group-addon" href="#">病虫害</a>
+				        <span class="input-group-addon">
+				            <input type="checkbox" name = "select2" aria-label="...">
+				        </span>
+				        <a class="input-group-addon" href="#">政策法规</a>
+				        <span class="input-group-addon">
+				            <input type="checkbox" name = "select3" aria-label="...">
+				        </span>
+				        <a class="input-group-addon" href="#">种植策略</a>
+				        <span class="input-group-addon">
+				            <input type="checkbox" name = "select4" aria-label="...">
+				        </span>
+				    </div><!-- /input-group -->
+
+				    <span class="input-group-btn">
+			        	<button type="submit" class="btn btn-default" value="Search" id="search_btn"> 注册 </button>
+			    	</span>
+				</div><!-- /.row -->
+			</form>
+
+
+		</div>
+	</nav>
+
+</body>
+</html>

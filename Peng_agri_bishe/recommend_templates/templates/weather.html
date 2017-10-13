@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class = "row">
+		<main class = "col-md-8 main-content">
+			<article class = "post">
+				<h2 class = "pull-center" align="center"> 预测未来8天最高气温变化 </h2>
+			  	<li class="list-group-item" align="center">
+				  	{% for max_degree in pred_max %}
+				  		{{ max_degree }} &nbsp&nbsp
+				  	{% endfor %}
+				  	单位：摄氏度
+			  	</li>
+			</article>
+			<article class = "post">
+				<h2 class = "pull-center" align="center"> 预测未来8天最低气温变化 </h2>
+				<li class="list-group-item" align="center">
+				  	{% for min_degree in pred_min %}
+				  		{{ min_degree }} &nbsp&nbsp
+				  	{% endfor %}
+				  	单位：摄氏度
+			  	</li>
+			</article>
+		</main>
+		<aside class = "col-md-4 sidebar">
+			<h2 class = "pull-center" align="center"> 成都市天气状况 </h2>
+			<nav class="navbar navbar-default" role="navigation">
+				{% for weather in weather_data %}
+					<div class="page-header">
+						<h4 class = "pull-center" align="center"> {{ weather.content }}</h4>
+						<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+					</div>
+				{% endfor %}
+			</nav>	
+		</aside>
+	</div>
+			
+{% endblock %}
+
+

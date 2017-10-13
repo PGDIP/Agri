@@ -1,0 +1,548 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="content">
+    <div class="tb1">
+    <table width="1200" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <td width="500" align="center" valign="top">
+                <table width="500" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td align="left" class="bj_35">图片新闻</td>
+                    </tr>
+                    <tr>
+                        <td height="6"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td width="500" align="center">
+                            <script language="JavaScript">
+                                var isIE = !(navigator.userAgent.indexOf('MSIE') == -1);
+                                var news;
+                                var curNew = 0;
+                                var timer;
+
+                                function init() {
+                                    var div = document.getElementById("NewsPic");
+                                    if (!div) return;
+                                    var nav = document.createElement("DIV");
+                                    nav.className = "Nav";
+                                    var nodes;
+                                    if (isIE) {
+                                        nodes = div.childNodes;
+                                    }
+                                    else {
+                                        nodes = childrenNodes(div.childNodes);
+                                    }
+                                    news = new Array(nodes.length);
+                                    for (var i = nodes.length - 1; i >= 0; i--) {
+                                        var element = nodes[i];
+
+                                        news[i] = {};
+                                        news[i].Element = element;
+                                        news[i].Text = element.getAttribute("title");
+                                        news[i].Url = element.getAttribute("href");
+
+                                        var n = document.createElement("span");
+                                        n.innerHTML = "<a href=\"javascript:;\" onMouseMove=\"javascript:curNew=" + (i - 1) + ";change();\">" + (i + 1) + "</a>";
+                                        if (i == curNew) n.className = "Cur";
+                                        nav.appendChild(n);
+
+                                        news[i].LinkElement = n;
+                                    }
+                                    div.appendChild(nav);
+                                    curNew--;
+                                    change();
+                                }
+
+                                function childrenNodes(node) {
+                                    var c = new Array();
+                                    for (var i = 0; i < node.length; i++) {
+                                        if (node[i].nodeName.toLowerCase() == "a")
+                                            c.push(node[i]);
+                                    }
+                                    return c;
+
+
+                                }
+
+                                function change() {
+                                    var div = document.getElementById("NewsPic");
+                                    var text = document.getElementById("NewsPicTxt");
+                                    if (!div) return;
+                                    curNew = curNew + 1;
+                                    if (curNew >= news.length) curNew = 0;
+                                    for (var i = 0; i < news.length; i++) {
+                                        if (i == curNew) {
+                                            news[i].Element.style.display = "block";
+                                            news[i].Element.style.visibility = "visible";
+                                            news[i].LinkElement.className = "Cur";
+                                            text.innerHTML = "<a href=\"" + news[i].Url + "\" title=\"" + news[i].Text + "\" target=\"_blank\">" + news[i].Text + "</a>";
+
+                                        }
+                                        else {
+                                            news[i].Element.style.visibility = "hidden";
+                                            news[i].Element.style.display = "none";
+                                            news[i].LinkElement.className = "Normal";
+                                        }
+
+                                    }
+                                    if (timer) window.clearTimeout(timer);
+                                    timer = window.setTimeout("change()", 3000);
+
+                                }
+                            </script>
+                            <div style="MARGIN-TOP:0px;WIDTH:490px;HEIGHT:352px;">
+                                <span id="focuspic">
+                                    <div id="NewsPic">
+                                        <a title="农业产业化龙头企业与农业..." href="#" target="_blank"
+                                           style="display: block;visibility: visible;">
+                                            <img class="Picture" src="../static/img/lunbo.jpg" width="470px;"
+                                                 height="335px">
+                                        </a>
+                                        <a title="农业产业化龙头企业与农业..." href="#" target="_blank"
+                                           style="display: none;visibility: hidden;">
+                                            <img class="Picture" src="../static/img/lunbo.jpg" width="470px;"
+                                                 height="335px">
+                                        </a>
+                                        <a title="农业产业化龙头企业与农业..." href="#" target="_blank"
+                                           style="display: none;visibility: hidden;">
+                                            <img class="Picture" src="../static/img/news.png" width="470px;"
+                                                 height="335px">
+                                        </a>
+                                        <a title="农业产业化龙头企业与农业..." href="#" target="_blank"
+                                           style="display: none;visibility: hidden;">
+                                            <img class="Picture" src="../static/img/news.png" width="470px;"
+                                                 height="335px">
+                                        </a>
+                                        <a title="农业产业化龙头企业与农业..." href="#" target="_blank"
+                                           style="display: none;visibility: hidden;">
+                                            <img class="Picture" src="../static/img/news.png" width="486px;"
+                                                 height="346px">
+                                        </a>
+
+                                    </div>
+                                    <div id="NewsPicTxt">
+                                        <a href="#" title="农业产业化龙头企业" target="_blank">农业产业化与龙头企业</a>
+                                    </div>
+                                </span>
+                                <script language="JavaScript">init();</script>
+                            </div>
+                            <table width="500" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td bgcolor="#E9E9E9">&nbsp</td>
+                                    <td width="60" height="20" align="center" bgcolor="#E9E9E9">
+                                        <a href="#" target="_blank">更多>></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="10" align="center" valign="top">&nbsp</td>
+            <td width="410" align="center" valign="top">
+                <table width="480" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td width="353" height="31" align="left" valign="bottom" background="../static/img/i_13-2_4.jpg">
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td width="10" background="../static/img/i_13-2_4.jpg">&nbsp</td>
+                                    <td width="120" height="31" align="center" valign="bottom" class="bj_7">
+                                        <a href="#" target="_blank" class="link07">本地新闻</a>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table width="480" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td align="center" valign="top" class="bk_6">
+                            <table width="467" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="产业精准扶贫">产业精准扶贫</a>
+
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td width="10" align="center" valign="top">&nbsp</td>
+
+            <td rowspan="2" width="280" align="center" valign="top">
+                <table width="280" border="0" cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td width="7" height="39">
+                            <img src="../static/img/idf_14-1.jpg" width="7" height="39">
+                        </td>
+                        <td align="left" valign="middle" background="../static/img/idf_14-2.jpg" class="huang_14_cu">
+                            <a href="#" target="_blank" class="link10">政策法规</a>
+                        </td>
+                        <td width="7" height="39">
+                            <img src="../static/img/idf_14-3.jpg" width="7" height="39"
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table width="280" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                    <tr>
+                        <td align="center" valign="top" class="bk_19">
+                            <table width="252" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td width="110" align="left" valign="top">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                            <tr>
+                                               <td align="center" valign="middle" class="bk_15">
+                                                   <a href="#" target="_blank">
+                                                       <img src="../static/img/lunbo.jpg" width="100" height="75" border="0">
+
+                                                   </a>
+                                               </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="26" align="center" valign="middle" class="hui_12_cu">
+                                                    <a href="#" target="_blank" class="link03">本地政策</a>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td align="left" valign="top" class="hui_12-5">
+                                        <table width="142" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                            <tr>
+                                                <td align="left" valign="top" class="hui_12-10">
+                                                            本届博览会所展示的，农村基础信息网络与农业信息服务体系建设，精准农业技术在生产一线的应用，...【
+                                                    <a href="#" target="_blank" class="link12">详细</a>
+                                                    "]"
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+
+
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td width="100" height="8"></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <table width="252" border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr><tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" valign="middle" class="bj_3">
+                                        <a class="link03" href="#" target="_blank" title="政策法规~~~">政策法规</a>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr >
+            <td colspan="4" width="900"  valign="top">
+                <img src="../static/img/lunbo.jpg" width="900" height="100">
+            </td>
+        </tr>
+        </tbody>
+
+
+    </table>
+
+        <table height="20" align="center" valign="top">&nbsp</table>
+        <table width="1200" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td width="353" height="31" align="left" valign="bottom" background="../static/img/i_13-2_4.jpg">
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                            <td width="10" background="../static/img/i_13-2_4.jpg">&nbsp;</td>
+                            <td width="110" height="31" align="center" valign="bottom" class="bj_7-1">
+                                <a href="#" target="_blank" class="link07">全国新闻</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table width="1200" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <td align="center" valign="top" class="bk_6">
+                    <table width="680" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                        <tr>
+                       <td align="left" valign="top">
+                           <table width="400" border="0" cellpadding="0" cellspacing="0">
+                               <tbody>
+                               <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                                <tr>
+                                   <td align="left" valign="middle" class="bj_3-2">
+                                    <a class="link03" href="#" target="_blank" title="上海新大米上市“崇明产”最畅销">
+                                        [上海]&nbsp;上海新大米上市“崇明产”最畅销
+                                    </a>
+                                   </td>
+                               </tr>
+                               </tbody>
+                           </table>
+                       </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tb2">
+
+    </div>
+
+    </div>
+{% endblock %}
