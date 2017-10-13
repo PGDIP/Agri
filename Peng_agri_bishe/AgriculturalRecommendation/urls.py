@@ -21,7 +21,7 @@ from recommend_templates.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^admin/', admin.site.urls),
-    url(r'^index/$', index),
+    url(r'^index/$', index, name='index'),
     url(r'^news/$',news),
     url(r'^class_1/$', class_1), # 转到新闻类1
     url(r'^class_2/$', class_2), # 转到新闻类2
@@ -37,7 +37,7 @@ urlpatterns = [
     ##############################################################
     url(r'^login/$', login, name='login'),
     url(r'^register/', register, name='register'),
-    url(r'^loginAjax/', login_ajax, name='loginAjax'),
     url(r'^registerAjax/', register_ajax, name='registerAjax'),
+    url(r'weatherTest/', weatherTest, name='weather')
     #url(r'^articles/(?P<pageId>[0-9]+)$')
 ]

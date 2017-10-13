@@ -349,39 +349,48 @@ def weather(request):
 
 ##############################################################################################################################################
 
-def login(request):
-    response_data = {}
+def weatherTest(request):
+    # from recommend_templates.Main.paserManager.weather import Weather
+    # weather = Weather()
+    # weather_list = weather.getWeather() #json.dumps(weather.getWeather(),ensure_ascii=False,encoding="utf-8") #unicode 转换为 utf-8
+    # print(json.dumps(weather_list[0],ensure_ascii=False,encoding="utf-8"))
+    # print(json.dumps(weather_list[1],ensure_ascii=False,encoding="utf-8"))
+    today = {"temp_low": "14", "weather": "小雨", "weatid1": "", "humi_low": "0", "humi_high": "0", "temp_curr": "16", "temperature": "18℃/14℃", "cityid": "101270101", "windid": "20", "weaid": "265", "week": "星期五", "temperature_curr": "16℃", "weather_icon1": "", "winpid": "201", "weatid": "2", "weather_curr": "多云", "citynm": "成都", "cityno": "chengdu", "days": "2017-10-13", "humidity": "85%", "weather_icon": "http://api.k780.com/upload/weather/d/1.gif", "temp_high": "18", "winp": "1级", "wind": "北风"}
+    seven_day = [{"week": "星期五", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "18℃/14℃", "weatid": "8", "temp_low": "14", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-13", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "18", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期六", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "18℃/15℃", "weatid": "8", "temp_low": "15", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-14", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "18", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期日", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "18℃/14℃", "weatid": "8", "temp_low": "14", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-15", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "18", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期一", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "18℃/13℃", "weatid": "8", "temp_low": "13", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-16", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "18", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期二", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "19℃/13℃", "weatid": "8", "temp_low": "13", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-17", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "19", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期三", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "21℃/14℃", "weatid": "8", "temp_low": "14", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-18", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/1.gif", "weather": "小雨转多云", "temp_high": "21", "weatid1": "2", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}, {"week": "星期四", "weather_icon": "http://api.k780.com/upload/weather/d/7.gif", "humi_high": "0", "humi_low": "0", "temperature": "27℃/19℃", "weatid": "8", "temp_low": "19", "citynm": "成都", "cityno": "chengdu", "winpid": "125", "days": "2017-10-19", "humidity": "0%/0%", "cityid": "101270101", "weather_icon1": "http://api.k780.com/upload/weather/n/7.gif", "weather": "小雨", "temp_high": "27", "weatid1": "8", "windid": "124", "winp": "微风", "wind": "无持续风向", "weaid": "265"}]
     if request.method == 'POST':
-        user = request.POST.get('user')
-        pwd = request.POST.get('password')
-        try:
-            if User.objects.filter(username=user,password=str(pwd)):  # 如果用户名和密码不能对上号，就返回主页
-                request.session['is_login'] = True
-                request.session['user_name'] = user
-                response_data["user_name"] = user
-                return index(request, response_data)
-            else:
-                return index(request)
-        except:
-            return index(request)
-    return render_to_response('loginTest.html')
+        # today = request.POST.get('today')
+        # seven_day = request.POST.get('seven_day')
+        weather = request.POST.get('weather')
+        if weather == 'seven_day':
+            return JsonResponse({'code':'7','weather_list':seven_day})  #weather_list[1]
+    return render(request,'weatherTest.html',{'weather':today,'user_name':request.session.get('user_name')}) #weather_list[0]
 
-def login_ajax(request):
+def login(request):
+    data = {}
     if request.method == 'POST':
         userName = request.POST.get('user')
-        if User.objects.filter(username=userName):
-            data = {
-                'code':'200'
-            }
-            return JsonResponse(data)
-            #return HttpResponse(json.dumps(data),content_type='application/json')
+        pwd = request.POST.get('password')
+        # if userName != '':
+        #     if User.objects.filter(username=userName):
+        #         data['code'] = '200'
+        #         #return HttpResponse(json.dumps(data),content_type='application/json')
+        #     else:
+        #         data ['code'] = '404'
+        #         #return HttpResponse(json.dumps(data), content_type='application/json')
+        # else:
+        #     data['isEmpty'] = '0'
+        if userName != '' and pwd != '':
+            if User.objects.filter(username=userName, password=str(pwd)):  # 如果用户名和密码不能对上号，就返回主页
+                request.session['is_login'] = True
+                request.session['user_name'] = userName
+                # return index(request)
+                data['correctCode'] = '1'
+            else:
+                data['errorCode'] = '0'
         else:
-            data = {
-                'code': '404'
-            }
-            return JsonResponse(data)
-            #return HttpResponse(json.dumps(data), content_type='application/json')
-
+            data['emptyCode'] = '0'
+        return JsonResponse(data)
+    return render_to_response('loginTest.html')
 def register(request):
     selectList = []
     if request.method == 'POST':
@@ -401,19 +410,53 @@ def register(request):
         pwd1 = re.findall(r'^[_.#*@%&A-Za-z0-9]{6,20}$',str(pwd))
         email1 = re.findall(r'^[\w!#$%&\'*+/=?^_`{|}~-]+(?:\.[\w!#$%&\'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?$',str(email))
         age1 = re.findall(r'^[0-9]\d*$',str(age))
+
         isExist = User.objects.filter(username=user)
-
-        if (not user1 or not pwd1 or not email1 or not age1) and (email1 != '' or age1 != ''):
-            return HttpResponse('alert(输入有误)')
+        code = {}
+        if isExist:
+            code['existCode'] = '200'
+            #return HttpResponse('<script>alert("账号已存在")</script>')
         else:
-            if isExist:
-                return HttpResponse('账号已存在')
-            else:
-                user = User(username=user,password = pwd,age=str(age),email=email,address=address,user_love=selectList)
+            if user1 and pwd1:
+                if email != '':
+                    if not email1:
+                        code['inputErrorCode'] = '404'
+                        return JsonResponse(code)
+                        #return HttpResponse('<script>alert("输入有误")</script>')
+                if age != '':
+                    if not age1:
+                        code['inputErrorCode'] = '404'
+                        return JsonResponse(code)
+                        #return HttpResponse('<script>alert("输入有误")</script>')
+                code['successCode'] = 'true'
+                user = User(username=user, password=pwd, age=str(age), email=email, address=address,user_love=selectList)
                 user.save()
-                return render(request, 'loginTest.html')
+                #return render(request, 'loginTest.html')
+            else:
+                code['inputErrorCode'] = '404'
+                #return HttpResponse('<script>alert("输入有误")</script>')
+        return JsonResponse(code)
     return render_to_response('registerTest.html')
-
+    #     if isExist:
+    #         code['existCode'] = '200'
+    #         return HttpResponse('<script>alert("账号已存在")</script>')
+    #     else:
+    #         if user1 and pwd1:
+    #             if email != '':
+    #                 if not email1:
+    #                     code['inputErrorCode'] = '404'
+    #                     return HttpResponse('<script>alert("输入有误")</script>')
+    #             if age != '':
+    #                 if not age1:
+    #                     code['inputErrorCode'] = '404'
+    #                     return HttpResponse('<script>alert("输入有误")</script>')
+    #             user = User(username=user, password=pwd, age=str(age), email=email, address=address, user_love=selectList)
+    #             user.save()
+    #             return render(request, 'loginTest.html')
+    #         else:
+    #             code['inputErrorCode'] = '404'
+    #             return HttpResponse('<script>alert("输入有误")</script>')
+    # return render_to_response('registerTest.html')
 def register_ajax(request):
     if request.method == 'POST':
         user = request.POST.get('user')
@@ -464,15 +507,10 @@ def register_ajax(request):
             result['uCodeEmpty'] = '0'
 
         return JsonResponse(result)
-
 # 用户提交登出
 def subLogout(request):
     # print "subLogout ......
     request.session['is_login'] = False
     request.session['user_name'] = None
     return index(request)
-
-def articles(request,pageId):
-    article = page.objects.get(pageId = pageId)
-    article = page.objects.all()
 

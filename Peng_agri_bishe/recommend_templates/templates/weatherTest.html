@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气频道</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
+    <script src="../static/js/alert.js"></script>
+    <style>
+        .seven_day,.seven_day tr td {
+            border: 1px solid #0094ff;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        .seven_day h4{
+            border-bottom: 1px solid #0094ff;
+            height: 35px;
+            size: 12px;
+            color: #ff3fd6;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .seven_day p{
+            size: 12px;
+            color: #ff3fd6;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .today table{
+            border: 1px solid #0094ff;
+            text-align: center;
+            border-collapse: collapse;
+            color: #ff3fd6;
+        }
+        .today table td{
+            border: 1px solid #0094ff;
+            width: 120px;
+            height: 100px;
+        }
+        *{padding:0;margin:0}
+	    html{overflow:hidden}
+
+    </style>
+    <script>
+        function refresh() {
+            window.location.replace({% url 'weather' %})
+        }
+        function getWeather(weather) {
+            $(document).ready(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'weather' %}",
+                    dataType: "json",
+                    data: {
+                        'weather': weather
+                    },
+                    success: function (res) {
+                        $("#today_div").hide();
+                        var table = "<table  class=\"seven_day\"><tr>";
+                        $.each(res.weather_list, function (idx, val) {
+                            table += "<td><h4 title='日期'>" + val.days + "</h4><h4 title='星期'>" + val.week + "</h4><h4><img src='" + val.weather_icon + "'><img src='" + val.weather_icon1 + "'></h4><h4 title='天气'>" + val.weather + "</h4><h4 title='当日温度区间'>" + val.temperature + "</h4><p class=\"win\"><em><span>" + val.winp + "</span></em> <i>" + val.wind + "</i> </p> </td>";
+                        });
+                        table += "</tr></table>";
+                        $('.content').append(table);
+                    },
+                    error: function (jqXHR) {
+                        alert("发生错误了：" + jqXHR.status);
+                    }
+                });
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <div class="text-center" >
+        <img src="/static/img/news.png" alt="logo" id="image" class="text-center"/>
+		<ul id = "result" class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="/index">主页</a></li>
+			<li role="presentation"><a href="{% url 'weather' %}">天气</a></li>
+			<li role="presentation"><a href="/class_2">病虫防治</a></li>
+			<li role="presentation"><a href="/class_3">果蔬种植</a></li>
+			<li role="presentation"><a href="/class_4">市场价格</a></li>
+			<li role="presentation"><a href="/class_5">政策法规</a></li>
+			{% ifequal user_name None %}
+				<li class = "pull-right " role="presentation"> <a href="/login"> 登录 </a> </li>
+				<li class = "pull-right " role="presentation"> <a href="/register"> 注册 </a> </li>
+			{% else %}
+				<li role="presentation"><a href="/history">历史浏览</a></li>
+				<li role="presentation"><a href="/myRecommend">我的推荐</a></li>
+				<li class = "pull-right " role="presentation"> <a href="/subLogout"> 登出 </a> </li>
+				<li class = "pull-right " role="presentation"> <a href="#"> {{ user_name  }} </a> </li>
+			{% endifequal %}
+		</ul>
+	</div>
+
+    <div>
+        <h6>
+            <em>
+                <a id="today" href="#" onclick="refresh()"> ·今天</a>
+            </em>
+            <i>
+                <a id="seven_today" onclick="getWeather('seven_day')" href="#"> ·7天</a>
+            </i>
+        </h6>
+        <br>
+        <div class="today" align="center" id="today_div">
+            <div>
+                <h4 title="城市名">{{ weather.citynm }}
+                    <em title="日期">{{ weather.days }}(今天)</em>
+                    <i title="星期">{{ weather.week }}</i>
+                </h4>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <h3>天气</h3>
+                        <h4 title="天气">{{ weather.weather }}</h4>
+                    </td>
+                    <td>
+                        <h3>气温</h3>
+                        <h4 title="当前温度">{{ weather.temperature_curr }}</h4>
+                    </td>
+                     <td>
+                         <h3>温度区间</h3>
+                         <h4 title="温度区间">{{ weather.temperature }}</h4>
+                    </td>
+                    <td>
+                         <h3>风向风速</h3>
+                         <h4 title="风向">{{ weather.wind }} {{ weather.winp }}</h4>
+                    </td>
+                    <td>
+                         <h3>相对湿度</h3>
+                         <h4 >{{ weather.humidity }}</h4>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="7d" class="content" align="center">
+        </div>
+    </div>
+</body>
+</html>
+
+
+{#                    success: function (data) {#}
+{#                        if (data.code == '7') {#}
+{#                            var list = data.weather_list;#}
+{#                            $(list).each(function () {#}
+{#                                var dict = this;#}
+{#                                document.createElement('div');#}
+{#                                $("#citynm").html(dict['citynm']);#}
+{#                                $("#days").html(dict['days']);#}
+{#                                $("#week").html(dict['week']);#}
+{#                                $("#temperature").html(dict['temperature']);#}
+{#                                $("#temperature_curr").html(dict['temperature_curr']);#}
+{#                                $("#humidity").html(dict['humidity']);#}
+{#                                $("#weather").html(dict['weather']);#}
+{#                                $("#weather_icon").attr("src", dict['weather_icon']);#}
+{#                                $("#weather_icon1").attr("src", dict['weather_icon1']);#}
+{#                                $("#wind").html(dict['wind']);#}
+{#                                $("#winp").html(dict['winp']);#}
+{#                                $("#temp_high").html(dict['temp_high']);#}
+{#                                $("#temp_low").html(dict['temp_low']);#}
+{#                                $("#humi_high").html(dict['humi_high']);#}
+{#                                $("#humi_low").html(dict['humi_low']);#}
+{#                            });#}
+{#                        }#}
+{#                    },#}

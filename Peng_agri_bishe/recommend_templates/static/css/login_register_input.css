@@ -1,0 +1,28 @@
+
+.login_register_div{
+    color: #0c0d10;
+    font-size: 12px;
+    width: 45%;
+    height: auto;
+}
+
+.login_register_div ul li{
+    list-style-type:none;
+    text-align: left;
+    padding-left: 150px;
+}
+
+.login_register_div input{
+    color: #0c0d10;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.login_register_button{
+    margin-top: 5px;
+    color: #0c0d10;
+    font-size: 12px;
+    width: 1.4cm;
+    height: 0.7cm;
+    cursor: pointer;
+}
+

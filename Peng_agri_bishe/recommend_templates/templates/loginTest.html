@@ -8,6 +8,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="stylesheet" href="../static/css/login_register_input.css">
+    <script src="../static/js/alert.js"></script>
+
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
@@ -20,25 +23,50 @@
     <title>果农帮新闻推荐系统</title>
     <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
     <script>
+{#        function openwin() {#}
+{#            window.open("{% url 'prompt' %}","错误提示","left=0,top=0,toolbar=yes, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=400, height=300")#}
+{#        }#}
         function login() {
             $(document).ready(function () {
                 $.ajax({
                     type: "POST",
-                    url: "{% url 'loginAjax' %}",
+                    url: "{% url 'login' %}",
                     dataType: "json",
                     data: {
-                        'user': $("#userName").val()
+                        'user': $("#userName").val(),
+                        'password':$("#userPassword").val()
                     },
                     success: function (data) {
-                        if (data.code == '200') {
-                            $("#isLoginIcon").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center">');
-                            $("#isLoginText").html('');
-
-                        } else if (data.code == '404') {
-                            $("#isLoginIcon").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');
-                            {#                            $('#isLoginIcon').append('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');#}
-                            $("#isLoginText").html('账号不存在');
+                        if (data.emptyCode != '0'){
+                            if (data.errorCode == '0'){
+                                    alert('账号或密码错误,请重新登陆');
+                                }
+                            else if(data.correctCode =='1'){
+                                    　window.location.href="{% url 'index' %}";
+                            }
+                        }else {
+                            alert('账号或密码 "不能" 为空..........')
                         }
+
+{#                        if(data.isEmpty == '0'){#}
+{#                            $("#isLoginIcon").html('');#}
+{#                            $("#isLoginText").html('');#}
+{#                        }else {#}
+{#                            if (data.errorCode == '0'){#}
+{#                                    alert('账号或密码错误,请重新登陆');#}
+{#                                }#}
+{#                            else if(data.correctCode =='1'){#}
+{#                                    　window.location.href="{% url 'index' %}";#}
+{#                            }#}
+{#                            if (data.code == '200') {#}
+{#                                $("#isLoginIcon").html('<img src="{% static '/img/correct.png' %}" width="18" height="17" align="center">');#}
+{#                                $("#isLoginText").html('');#}
+{#                            } else if (data.code == '404') {#}
+{#                                $("#isLoginIcon").html('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');#}
+                                {#                            $('#isLoginIcon').append('<img src="{% static '/img/error.png' %}" width="18" height="17" align="center" >');#}
+{#                                $("#isLoginText").html('账号不存在');#}
+{#                            }#}
+{#                        }#}
                     },
                     error: function (jqXHR) {
                         alert("发生错误了：" + jqXHR.status);
@@ -49,7 +77,8 @@
     </script>
 </head>
 {# http://localhost:8000/agriculture_app/loginAjax #}
-<body>
+<body >
+
     <div class="text-center">
         <img src="/static/img/news.png" alt="logo" id="image" class="text-center"/>
         <ul class="nav nav-tabs">
@@ -73,23 +102,33 @@
     <nav class="navbar navbar-default" role="navigation">
     </nav>
 
-
     <nav class="navbar navbar-default" role="navigation">
         <div class="dropdown-menu-center">
-            <form class="raw" action="{% url 'login' %}" role="search" method="post">
-                {% csrf_token %}
-                <div class="content" align="center">
-                    <div class="input-group">
-                        <input onkeyup="login()" onchange="login()" id="userName" name="user" class="form-control" placeholder="用户名或电话号码" maxlength="20" required>
-                        <label id="isLoginIcon"></label>
-                        <label id="isLoginText"></label><br>
-                        <input id="userPassword" name="password" class="form-control" type="password" placeholder="密码" maxlength="20" required><br>
+{#            <form class="raw" action="{% url 'loginAjax' %}" role="search" method="post">#}
+{#                {% csrf_token %}#}
+{#                <div class="content" align="center">#}
+{#                    <div class="input-group">#}
+{#                        <input onchange="login()" id="userName" name="user" class="form-control" placeholder="用户名或电话号码" maxlength="20" required>#}
+{#                        <label id="isLoginIcon"></label>#}
+{#                        <label id="isLoginText"></label><br>#}
+{#                        <input id="userPassword" name="password" class="form-control" type="password" placeholder="密码" maxlength="20" required><br>#}
+{#                    </div><!-- /input-group -->#}
+{#                    <span class="input-group-btn">#}
+{#                            <button type="submit" class="btn btn-default" value="Search" id="search_btn" onclick="login()"> 登录 </button>#}
+{#                        </span>#}
+{#                </div><!-- /.row -->#}
+{#            </form>#}
+            <div class="content" align="center">
+                    <div class="login_register_div">
+                        <ul>
+                             <li>账号：<input id="userName" name="user" placeholder="用户名或电话号码" maxlength="20" required></li>
+                             <li>密码：<input id="userPassword" name="password" type="password" placeholder="密码" maxlength="20" required></li>
+                        </ul>
                     </div><!-- /input-group -->
                     <span class="input-group-btn">
-                            <button type="submit" class="btn btn-default" value="Search" id="search_btn"> 登录 </button>
+                            <button type="submit" class="login_register_button" value="Search" id="search_btn" onclick="login()"> 登录 </button>
                         </span>
                 </div><!-- /.row -->
-            </form>
         </div>
     </nav>
 </body>
