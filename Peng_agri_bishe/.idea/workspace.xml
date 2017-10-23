@@ -15,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Peng_agri_bishe$mongoClass.coverage" NAME="mongoClass Coverage Results" MODIFIED="1503425139053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/dbManager" />
     <SUITE FILE_PATH="coverage/Peng_agri_bishe$process_work.coverage" NAME="process_work Coverage Results" MODIFIED="1506070542637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
-    <SUITE FILE_PATH="coverage/Peng_agri_bishe$newsContent__1_.coverage" NAME="newsContent (1) Coverage Results" MODIFIED="1508742580466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
+    <SUITE FILE_PATH="coverage/Peng_agri_bishe$newsContent__1_.coverage" NAME="newsContent (1) Coverage Results" MODIFIED="1508746287966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
     <SUITE FILE_PATH="coverage/Peng_agri_bishe$test.coverage" NAME="test Coverage Results" MODIFIED="1508742283984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
     <SUITE FILE_PATH="coverage/Peng_agri_bishe$price.coverage" NAME="price Coverage Results" MODIFIED="1508577727833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
     <SUITE FILE_PATH="coverage/Peng_agri_bishe$util.coverage" NAME="util Coverage Results" MODIFIED="1508682847010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend_templates/Main/paserManager" />
@@ -38,13 +38,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newsContent.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="newsContent.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/newsContent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="165" column="48" lean-forward="true" selection-start-line="165" selection-start-column="48" selection-end-line="165" selection-end-column="48" />
+            <state relative-caret-position="544">
+              <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
                 <element signature="e#463#670#0" expanded="false" />
                 <element signature="e#691#2844#0" expanded="false" />
                 <element signature="e#3515#5578#0" expanded="false" />
@@ -59,8 +58,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommend_templates/Main/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="100">
+              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -69,36 +68,9 @@
       <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-              <folding>
-                <element signature="e#286#6802#0" expanded="false" />
-                <element signature="e#442#2659#0" expanded="false" />
-                <element signature="e#4914#5322#0" expanded="false" />
-                <element signature="e#5372#5559#0" expanded="false" />
-                <element signature="e#5612#6567#0" expanded="false" />
-                <element signature="e#5612#5660#0" expanded="false" />
-                <element signature="e#6608#6802#0" expanded="false" />
-                <element signature="e#6889#9042#0" expanded="false" />
-                <element signature="e#9078#9814#0" expanded="false" />
-                <element signature="e#9848#10505#0" expanded="false" />
-                <element signature="e#13847#13864#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <element signature="e#117#2270#0" expanded="false" />
-                <element signature="e#2306#3064#0" expanded="false" />
-                <element signature="e#3098#3755#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="3664">
+              <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -700,7 +672,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16641453" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4555921" sideWeight="0.5045386" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -955,13 +927,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/weather.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/weather.py" />
     <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/price.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -980,7 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,71 +960,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="357" lean-forward="false" selection-start-line="0" selection-start-column="357" selection-end-line="0" selection-end-column="357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/io/correctIp.txt" />
+    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/test.py" />
+    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3664">
+          <caret line="261" column="0" lean-forward="false" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/newsContent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="165" column="48" lean-forward="true" selection-start-line="165" selection-start-column="48" selection-end-line="165" selection-end-column="48" />
+        <state relative-caret-position="544">
+          <caret line="132" column="24" lean-forward="true" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
             <element signature="e#463#670#0" expanded="false" />
             <element signature="e#691#2844#0" expanded="false" />
             <element signature="e#3515#5578#0" expanded="false" />
             <element signature="e#8319#17033#0" expanded="false" />
             <element signature="e#17381#105514#0" expanded="false" />
             <element signature="e#17485#103436#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/io/correctIp.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#286#6802#0" expanded="false" />
-            <element signature="e#442#2659#0" expanded="false" />
-            <element signature="e#4914#5322#0" expanded="false" />
-            <element signature="e#5372#5559#0" expanded="false" />
-            <element signature="e#5612#6567#0" expanded="false" />
-            <element signature="e#5612#5660#0" expanded="false" />
-            <element signature="e#6608#6802#0" expanded="false" />
-            <element signature="e#6889#9042#0" expanded="false" />
-            <element signature="e#9078#9814#0" expanded="false" />
-            <element signature="e#9848#10505#0" expanded="false" />
-            <element signature="e#13847#13864#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommend_templates/Main/paserManager/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="66" column="40" lean-forward="true" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-            <element signature="e#117#2270#0" expanded="false" />
-            <element signature="e#2306#3064#0" expanded="false" />
-            <element signature="e#3098#3755#0" expanded="false" />
           </folding>
         </state>
       </provider>
