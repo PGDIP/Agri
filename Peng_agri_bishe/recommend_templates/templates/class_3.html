@@ -6,7 +6,7 @@
     <div class="bm_c xld">
         {% for news in data %}
             <dl class="bbda cl">
-                <dt class="xs2"><a class="xi2">{{ news.news.title }}</a>
+                <dt class="xs2"><a class="xi2" href="{% url 'test' news.news.pageId %}">{{ news.news.title }}</a>
                 </dt>
                 <dd class="xs2 cl">
                     <div class="atc"><a title={{ news.news.title }}><img

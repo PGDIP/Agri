@@ -1,5 +1,4 @@
 import re
-import socket
 import multiprocessing
 from bs4 import BeautifulSoup
 import time
@@ -13,6 +12,7 @@ from recommend_templates.Main.paserManager.tools.random_num import random_num
 from recommend_templates.Main.paserManager.tools.replaceTool import Tool
 from recommend_templates.Main.paserManager.util import HttpUtil
 from recommend_templates.models import page
+import random
 
 def getId():
     isHave = True
@@ -26,13 +26,33 @@ def getId():
     return id
 
 
-# 耕种帮
-class GZB():
-    def __init__(self,ROOT_PATH):
-        self.ROOT_PATH = ROOT_PATH
+user_agent_list = [
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
+            "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
+            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
+            "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5",
+            "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+            "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
+        ]
 
+# 耕种帮
+class GZB ():
+    def __init__(self , ROOT_PATH):
+        self.ROOT_PATH = ROOT_PATH
     head = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
+        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
         'Accept-Language': 'zh-CN,zh;q=0.8',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'Referer': 'http://www.gengzhongbang.com'
@@ -48,7 +68,7 @@ class GZB():
                 print('...................已经爬取过了..............')
             else:
                 tool = Tool()
-                html = self.util.getHtml(url)
+                html = self.util.getHtml(url,3,6) #分别是 url，超时时间，重复几次
                 key = re.compile(
                     r'<div class="bm vw">.*?<h1 class="ph">(.*?) </h1>.*?<td id="article_content">(.*?)</td>.*?</div>',
                     re.S)
@@ -57,7 +77,7 @@ class GZB():
 
                 if page.objects.filter(title=title):
                     print('%s___标题为 %s ......已经存在.......' % (class_name, title))
-                    time.sleep(5)
+                    time.sleep(3)
                 else:
                     content = result[0][1]
                     pattern_text = re.compile(r'<div>(.*?)</div>', re.S)
@@ -78,15 +98,12 @@ class GZB():
                     cate.save()
                     with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'a+') as f:
                         f.writelines(url + ' , ')
-            time.sleep(5)
+        time.sleep(3)
 
-
-
-            # 得到分类网址
-
+    # 得到分类网址
     def get_url_list(self):
         util = HttpUtil(url=self.baseUrl, headers=self.head, code='gbk')
-        html = util.getHtml(self.baseUrl)
+        html = util.getHtml(self.baseUrl,3,6)
         soup = BeautifulSoup(html, 'lxml')
         data = soup.find_all('ul', class_='p_pop h_pop')
         pattern = re.compile(u'.*?视频|作用|大全.*?', re.S)
@@ -113,9 +130,7 @@ class GZB():
                 urldict['name'] = item.get_text()
                 # print(item['href'],item.get_text())
                 urllist.append(urldict)
-
         # print(urllist)
-        time.sleep(1)
         return urllist
 
     # 得到全部文章内容
@@ -134,7 +149,7 @@ class GZB():
             cpu = multiprocessing.cpu_count()
             pool = Pool(processes=cpu)  # 建立进程池
             pool.map(self.main_process, list)  # 映射到主函数中进行循环
-            time.sleep(100)  # 一个分类采集完 等待100s
+            time.sleep(20)  # 一个分类采集完 等待100s
         print('[耕种帮]..数据采集完毕.....')
 
     def main_process(self, list=[]):  # 主进程
@@ -143,15 +158,15 @@ class GZB():
         print('主进程ID：%s , 类名：%s ,页地址：%s' % (os.getpid(), class_name, page_url))
         # print(class_name,page_url)
         key = re.compile(r'<dt class="xs2">.*?<a href="(.*?)".*?>.*?</a>.*?</dt>', re.S)
-        page_html = requests.get(page_url, headers=self.head)
-        url_data = self.util.getData(str(page_html.text), key, flag=1)
+        page_html = self.util.getHtml(page_url,3,6) #requests.get(page_url, headers=self.head)
+        url_data = self.util.getData(str(page_html), key, flag=1)
         if url_data:
             for url in url_data:
                 # print(url)
                 self.dataHandle(url, class_name)
         else:
             print('没文章了.........')
-        time.sleep(50)  # 每一页采集完等待10s
+        time.sleep(10)  # 每一页采集完等待10s
 
 # 中国农业科技信息网
 class ZGNYKJ():
@@ -170,7 +185,7 @@ class ZGNYKJ():
 
     def getClassification(self, url):
         url_list = []
-        html = self.util.getHtml(url + 'index.shtml')
+        html = self.util.getHtml(url + 'index.shtml',3,6)
         time.sleep(1)
         key = re.compile(r'<div class="menu">.*?<h3>.*?</h3>(.*?)<h4>.*?</h4>.*?</div>', re.S)
         result = self.util.getData(html, key, 1)[0]
@@ -209,7 +224,7 @@ class ZGNYKJ():
         url_list = self.get_all_class_url()
         for url in url_list:  # http://www.cast.net.cn/zx/kjyw/index   '.shtml'
             class_name = url['class_name']
-            html = self.util.getHtml(url['url'] + '.shtml')
+            html = self.util.getHtml(url['url'] + '.shtml',3,6)
             time.sleep(1)
             soup = BeautifulSoup(html, 'lxml')
             page = soup.find('div', class_='select').get_text()
@@ -240,7 +255,7 @@ class ZGNYKJ():
             if url in f.readline():
                 print('...................已经爬取过了..............')
             else:
-                html = self.util.getHtml(url)
+                html = self.util.getHtml(url,3,6)
                 soup = BeautifulSoup(html, 'lxml')
                 # title = ''#soup.find('div', class_='title4').get_text().strip()
                 zhengwen = soup.find('div', class_='zhengwen')
@@ -318,13 +333,12 @@ class ZGNYKJ():
                     self.contentCount.append(url)
                     with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'a+') as f:
                         f.writelines(url + ' , ')
-        time.sleep(3)
         return self.contentCount
 
     def get_each_page_url(self, urlList):
         class_name = urlList['class_name']
         print('>>>>>>>>>>主进程ID:', os.getpid(), ' 分类名:', class_name, ' URL:',urlList['url'] + urlList['index'] + '.shtml')
-        html = self.util.getHtml(urlList['url'] + urlList['index'] + '.shtml')
+        html = self.util.getHtml(urlList['url'] + urlList['index'] + '.shtml',3,6)
         soup = BeautifulSoup(html, 'lxml')
         if soup.find('ul', id='ul'):
             for li in soup.find('ul', id='ul').find_all('li'):
@@ -332,22 +346,22 @@ class ZGNYKJ():
         else:
             return 'break'
         print( '................../////////////////////..............%s................///////////////////////..................' %urlList['index'][5:])
-        time.sleep(10)
+        time.sleep(5)
 
 
 def all_main():
     ROOT_PATH = os.getcwd()
     #  .........耕种帮.........
-    #gzb = GZB(ROOT_PATH[:-13])
-    #gzb.get_url_from_each_page()
+    gzb = GZB(ROOT_PATH[:-13])
+    gzb.get_url_from_each_page()
 
     #  .........天气.........
     # weather = Weather()
     # weather_list = weather.getWeather()
 
     #  .........中国农业科技.........
-    zgny = ZGNYKJ(ROOT_PATH[:-13])
-    zgny.main()
+    # zgny = ZGNYKJ(ROOT_PATH[:-13])
+    # zgny.main()
 
 
 class Weather():
@@ -2855,3 +2869,4 @@ class Weather():
 
 if __name__ == '__main__':
     all_main()
+
