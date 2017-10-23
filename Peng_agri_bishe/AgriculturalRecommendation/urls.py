@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^login/$', login, name='login'),
     url(r'^register/', register, name='register'),
     url(r'^registerAjax/', register_ajax, name='registerAjax'),
-    url(r'weatherTest/', weatherTest, name='weather')
+    url(r'weatherTest/', weatherTest, name='weather'),
+    url(r'test/(?P<pageId>[0-9]+)$',article,name='test')
     #url(r'^articles/(?P<pageId>[0-9]+)$')
 ]

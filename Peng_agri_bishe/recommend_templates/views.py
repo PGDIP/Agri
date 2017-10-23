@@ -514,3 +514,7 @@ def subLogout(request):
     request.session['user_name'] = None
     return index(request)
 
+def article(request,pageId):
+    article = page.objects.filter(pageId = pageId).first()
+    return render(request,'test.html',{'articles':article})
+

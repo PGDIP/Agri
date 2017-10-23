@@ -12,9 +12,12 @@ from sklearn.neighbors import NearestNeighbors
 
 from recommend_templates.Main.paserManager.newsContent import *
 from recommend_templates.Main.paserManager.price import Price
+
 "remove db news"
 
 import time
+
+ROOT_PATH = os.getcwd()
 
 # 更新数据库,保证新闻信息最新
 def updateDB():
@@ -68,8 +71,9 @@ if __name__ == '__main__':
 	# rec_db.remove("user") #清空数据库
 	# updateDB()  # 爬虫模块入口
 
-
-	ROOT_PATH = os.getcwd()
+	from recommend_templates.Main.paserManager.util import CorrectIp
+	ci = CorrectIp()
+	ci.getCorrectIp()  #代理ip
 
 	gzb = GZB(ROOT_PATH)  #  .........耕种帮.........
 	gzb.get_url_from_each_page()
