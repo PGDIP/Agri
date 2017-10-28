@@ -3,7 +3,7 @@
 *.html linguist-language=Python
 
 #python:忽略Python编译产生的.pyc、.pyo、dist等文件或目录：
-*.py[cod]
+*.pyc
 *.so
 *.egg
 *.egg-info
