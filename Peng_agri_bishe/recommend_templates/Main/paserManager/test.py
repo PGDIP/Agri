@@ -26,57 +26,159 @@ class CorrectIp():
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
             "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
         ]
+        self.baseUrlList = ['http://www.xicidaili.com/nt/','http://www.xicidaili.com/nn/','http://www.xicidaili.com/wn/','http://www.xicidaili.com/wt/']
+        self.ipList = []
 
-    def getProxyIp(self):
+    # def getProxyIp(self):
+    #     headers = {
+    #         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    #         'Accept-Encoding': 'gzip, deflate',
+    #         'Accept-Language': 'zh-CN,zh;q=0.9',
+    #         'Upgrade-Insecure-Requests': '1',
+    #         'Connection': 'keep-alive',
+    #         'Host': 'www.goubanjia.com',
+    #         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+    #         'Referer': 'http://www.goubanjia.com/',
+    #         'Cookie': 'UM_distinctid=15f49ec60ab27-0d067d232c68e-5b4a2c1d-100200-15f49ec60ac1f8; JSESSIONID=AB5E98C8BEA481A6089B79D7C2752D44; CNZZDATA1253707717=435162388-1508773334-null%7C1508827880; Hm_lvt_2e4ebee39b2c69a3920a396b87bbb8cc=1508773749,1508815637,1508827881,1508832505; Hm_lpvt_2e4ebee39b2c69a3920a396b87bbb8cc=1508832905'
+    #     }
+    #     ipList = []
+    #     urlList = []
+    #     from recommend_templates.Main.paserManager.util import HttpUtil
+    #     util = HttpUtil('http://www.goubanjia.com',headers=headers , code='utf-8')
+    #     for url in self.baseUrlList:
+    #         for index in range(1,5):
+    #             urlList.append(url+str(index)+'.shtml')
+    #
+    #     def getOnePageIp(url):
+    #         import time
+    #         from bs4 import BeautifulSoup
+    #         from recommend_templates.Main.paserManager.tools.replaceTool import Tool
+    #         response = util.getHtml(url,3,3)
+    #         tdIpList = BeautifulSoup(response,'lxml').find('div',id='list').find_all('td',class_ = 'ip')
+    #         tool = Tool()
+    #         for ip in tdIpList:
+    #             print(ip)
+    #             pattern = re.compile(r':|<span.*?>(.*?)</span>|<div.*?>(.*?)</div>',re.S)
+    #             ip_ = []
+    #             for ip in re.findall(pattern , str(ip)):
+    #                 print(ip)
+    #                 if ip[0] != '':
+    #                     ip_.append(ip[0])
+    #                 elif ip[1] != '':
+    #                     ip_.append(ip[1])
+    #                 else:
+    #                     continue
+    #             ipList.append(ip_[0])
+    #         time.sleep(3)
+    #         print(ipList)
+    #     getOnePageIp('http://www.goubanjia.com/free/index1.shtml')
+    #
+    #     # threads = []
+    #     # for i in range(len(urlList)):
+    #     #     import threading
+    #     #     thread = threading.Thread(target=getOnePageIp, name='...线程:....' + str(i), args=(urlList[i],))
+    #     #     threads.append(thread)
+    #     #     thread.start()
+    #     # # 阻塞主进程，等待所有子线程结束
+    #     # for thread in threads:
+    #     #     thread.join()
+    #     return ipList
+
+    def getOnePageIp(self,url):
+        import time
+        from bs4 import BeautifulSoup
         headers = {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Referer': 'https://www.baidu.com/link?url=8EVV_CMht2u93RVzpkoQyVXTOmyvIZuS77hh7boZfrNMnE0nuaJyK4RVEYYA0JCI&wd=&eqid=8e36fcf6000165470000000359ec54d5',
+            'Accept-Encoding': 'gzip, deflate',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Cache-Control': 'max-age=0',
+            'Connection': 'keep-alive',
+            'Cookie': '_free_proxy_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWZhNTM3NTY0MGY4MGJhODgxMGVmMGRkM2MxYjJkOTU0BjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMVl2LzNETGVKdGxYSDFDRmxmRlhSQmNRUXArd284eVFnZ3RWQkxuNnRubHc9BjsARg%3D%3D--18824704847b9c417b2707ad0ef92effbcad8f20; Hm_lvt_0cf76c77469e965d2957f0553e6ecf59=1508748051,1508772712,1508815900,1508946118; Hm_lpvt_0cf76c77469e965d2957f0553e6ecf59=1508946275',
+            'Host': 'www.xicidaili.com',
+            'If-None-Match': 'W/"38cc9bff2b346d4a3b5fc348587d90a9"',
+            'Referer': 'http://www.xicidaili.com/',
+            'Upgrade-Insecure-Requests': '1',
             'User-Agent': random.choice(self.user_agent_list)
         }
-        ipList = []
-        response = requests.get('http://www.xicidaili.com/nt/', headers=headers).text
-        pattern = re.compile(r'<td class="country"><img src=.*?/></td>.*?<td>(.*?)</td>.*?<td>(.*?)</td>.*?', re.S)
-        List = re.findall(pattern, response)
-        for item in List:
-            ipList.append('http://' + item[0] + ':' + item[1])
-        print(ipList)
-        return ipList
+        response = requests.get(url, headers=headers)
+        response.encoding = 'utf-8'
+        tbody = BeautifulSoup(response.text, 'lxml').find('table', id='ip_list')
+        pattern = re.compile(r'<img.*?/>.*?</td>.*?<td>(.*?)</td>.*?<td>(.*?)</td>', re.S)
+        ip_pro = re.findall(pattern, str(tbody))
+        for ip in ip_pro:
+            self.ipList.append(ip[0] + ':' + ip[1])
+        self.getCorrectIp(self.ipList)
+
+    def add_Threading(self,url):
+        import os
+        import threading
+        print('......正在获取代理ip......')
+        print('......主进程：.....', os.getpid())
+        urlList = []
+        for index in range(1,5):
+            urlList.append(url + str(index))
+        threads = []
+        for i in range(len(urlList)):
+            thread = threading.Thread(target=self.getOnePageIp, name='...线程:....' + str(i), args=(urlList[i],))
+            threads.append(thread)
+            thread.start()
+        # 阻塞主进程，等待所有子线程结束
+        for thread in threads:
+            thread.join()
+
+    def getProxyIp(self):
+        import multiprocessing
+        from multiprocessing import Pool
+        cpu = multiprocessing.cpu_count()
+        pool = Pool(processes=cpu)  # 建立进程池
+        pool.map(self.add_Threading,self.baseUrlList)  # 映射到主函数中进行循环
 
     def Ip(self,proxy):
         headers = {
-            'Host':'ip.chinaz.com',
+            'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding':'gzip, deflate',
+            'Accept-Language':'zh-CN,zh;q=0.9',
+            'Cache-Control':'max-age=0',
+            'Connection':'keep-alive',
+            'Host':'www.gengzhongbang.com',
+            'Referer':'https://www.baidu.com/link?url=TdtRy_RwYTTH1xVm1JWrX6N0YtG4DLBBEVVx69kmFNcEB9No-kySt6EPcNKdqUzF&wd=&eqid=e7f0f2410000192a0000000359f17f6d',
+            'Upgrade-Insecure-Requests':'1',
             'User-Agent': random.choice(self.user_agent_list)
-            }
-        url = "http://ip.chinaz.com/getip.aspx"
-        import os
-        print('......主进程：.....',os.getpid())
+        }
+        url = 'http://www.gengzhongbang.com/' #"http://www.ip138.com"
+        # import os
+        # print('......主进程：.....',os.getpid())
         try:
-            res = requests.get(url, headers = headers , proxies={'http': proxy} , timeout = 3)
-            if res.status_code == '200':
-                print(proxy)
+            res = requests.get(url, headers = headers , proxies={'http': proxy},timeout = 3)
+            if res.status_code == 200:
+                print('.......可用ip.......',proxy)
                 from recommend_templates.Main.main import ROOT_PATH
                 with open(ROOT_PATH[:-12] + r'io\correctIp.txt', 'a+') as f:
                     f.writelines(proxy + ' , ')
         except Exception as e:
             print(e)
+        import time
+        time.sleep(3)
 
-    def getCorrectIp(self):
+    def getCorrectIp(self,urlList):
         print('..........正在提取可用的 ip.........')
-        List = ['http://113.93.225.94:9797', 'http://222.174.168.102:53281', 'http://49.73.236.172:3128', 'http://121.35.243.157:8080', 'http://218.56.132.154:8080', 'http://122.72.18.34:80', 'http://61.160.208.222:8080', 'http://122.72.18.35:80', 'http://124.232.148.7:3128', 'http://106.4.64.5:3128', 'http://122.224.227.202:3128', 'http://122.72.18.61:80', 'http://121.43.178.58:3128', 'http://118.113.146.4:8888', 'http://180.168.179.193:8080', 'http://211.103.208.244:80', 'http://218.56.132.156:8080', 'http://115.196.190.17:8118', 'http://119.90.63.3:3128', 'http://218.56.132.157:8080', 'http://59.32.155.235:9000', 'http://61.152.230.26:8080', 'http://183.54.246.179:9000', 'http://218.56.132.155:8080', 'http://139.129.166.68:3128', 'http://222.212.185.3:8888', 'http://124.119.27.98:53281', 'http://27.46.20.81:888', 'http://119.163.133.93:8118', 'http://121.13.159.164:9999', 'http://115.233.210.218:808', 'http://119.90.248.245:9999', 'http://180.140.160.224:9797', 'http://223.199.191.59:808', 'http://60.191.134.165:9999', 'http://180.173.52.202:53281', 'http://112.250.65.222:53281', 'http://61.134.25.106:3128', 'http://221.206.5.183:53281', 'http://113.66.158.221:9797', 'http://113.87.161.176:808', 'http://58.17.125.215:53281', 'http://222.86.191.44:8080', 'http://121.63.209.247:9999', 'http://114.98.7.180:9000', 'http://27.44.174.66:9999', 'http://182.88.199.87:9797', 'http://220.248.207.105:53281', 'http://110.16.80.106:8080', 'http://113.89.54.241:9999', 'http://218.62.90.30:53281', 'http://175.9.247.1:53281', 'http://111.192.237.220:9797', 'http://101.81.106.155:9797', 'http://123.138.89.133:9999', 'http://61.163.39.70:9999', 'http://110.189.153.33:53281', 'http://218.28.58.150:53281', 'http://218.6.145.11:9797', 'http://219.131.180.4:9797', 'http://113.77.241.17:9000', 'http://113.78.255.32:9000', 'http://125.125.212.145:80', 'http://58.60.33.242:9797', 'http://202.105.111.193:9000', 'http://219.156.151.20:53281', 'http://202.38.92.100:3128', 'http://59.78.47.184:8123', 'http://113.110.247.199:3128', 'http://113.66.236.193:9797', 'http://113.66.158.251:9797', 'http://1.81.102.173:8118', 'http://119.121.110.93:9797', 'http://119.123.176.43:9000', 'http://27.46.42.145:9797', 'http://115.193.100.252:9797', 'http://119.122.215.179:9000', 'http://175.171.179.160:53281', 'http://183.54.30.87:9000', 'http://180.173.67.83:9797', 'http://175.147.123.164:80', 'http://1.196.118.122:9000', 'http://58.59.172.224:9797', 'http://58.59.172.134:9797', 'http://124.89.33.75:9999', 'http://113.89.15.93:9999', 'http://27.42.158.68:9797', 'http://27.42.159.147:9797', 'http://110.52.8.213:53281', 'http://112.95.190.125:9999', 'http://125.40.25.102:9999', 'http://163.125.238.226:9797', 'http://163.125.198.140:9797', 'http://222.186.45.60:62222']
-        import multiprocessing
-        from multiprocessing import Pool
-        cpu = multiprocessing.cpu_count()
-        pool = Pool(processes=cpu)  # 建立进程池
-        pool.map(self.Ip, List)  # 映射到主函数中进行循环
+        threads = []
+        for i in range(len(urlList)):
+            import threading
+            thread = threading.Thread(target=self.Ip, name= '...线程:....'+str(i), args=(urlList[i],))
+            threads.append(thread)
+            thread.start()
+        # 阻塞主进程，等待所有子线程结束
+        for thread in threads:
+            thread.join()
         print('..........代理ip提取完成...........')
 
 
 if __name__ == '__main__':
-    # ci = CorrectIp()
-    # ci.getCorrectIp()
-    from recommend_templates.Main.main import ROOT_PATH
-    with open(ROOT_PATH[:-12] + r'io\correctIp.txt', 'r') as f:
-        ipList = f.read()
-        print(ipList.split(','))
-    print(len(ipList.split(',')))
+    ci = CorrectIp()
+    ci.getProxyIp()
+    # from recommend_templates.Main.main import ROOT_PATH
+    # with open(ROOT_PATH[:-12] + r'io\correctIp.txt', 'r') as f:
+    #     ipList = f.read()
+    #     print(ipList.split(','))
 
