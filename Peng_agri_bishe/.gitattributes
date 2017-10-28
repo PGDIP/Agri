@@ -1,9 +1,7 @@
-*.js linguist-language=Python
+﻿*.js linguist-language=Python
 *.css linguist-language=Python
 *.html linguist-language=Python
 
-#忽略Python编译产生的.pyc、.pyo、dist等文件或目录：
-# Python:
 *.py[cod]
 *.so
 *.egg
