@@ -1,6 +1,4 @@
 # Agriculture
-大吉大利，今晚吃鸡
-
 1、selenium 之 chromedriver 配置：
 
   · google浏览器与driver映射表：
