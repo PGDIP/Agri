@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+
 {% block content %}
-
-
 <div class="wp">
     <div class="bm_c xld">
-        {% for news in data %}
-            <dl class="bbda cl">
-                <dt class="xs2"><a class="xi2">{{ news.news.title }}</a>
+        {% for news in data.news_list %}
+            <dl class="bbda cl" id="{{ news.news.id }}">
+                <dt class="xs2"><a class="xi2" href="{% url 'article' news.news.pageId %}">{{ news.news.title }}</a>
                 </dt>
                 <dd class="xs2 cl">
                     <div class="atc"><a title={{ news.news.title }}><img
@@ -16,40 +15,53 @@
                     </div>
                     <div class="articles">{{ news.content }}</div>
                 </dd>
-                <dd> 分类: <label><a class="xi2">梨树病虫害防治</a></label>&nbsp;&nbsp;
+                <dd> 分类: <label><a class="xi2">市场价格</a></label>&nbsp;&nbsp;
                 </dd>
             </dl>
         {% endfor %}
         <div class="pgs c1">
             <div class="pg">
                 <ul class="pagination pagination-sm">
-                    {{ page_obj.page_str1|safe }}
+                    {{ page_obj.page_str2|safe }}
                 </ul>
             </div>
         </div>
     </div>
-
 </div>
-
 {% endblock %}
-{% block script %}
+
+{% block script%}
 <script>
-    $(document).ready(function(){
-		{% for news in news_list %}
-			$( "{{news.ajax_id}}" ).click(
-				function(){
-					var news_id = "{{news.news_id}}";
-					$.get(
-						"/count_click_times/",{'news_id':news_id,"user_name":"{{user_name}}"}, 
-						function(ret){ $('#result').html(ret.result)} 
-					)
-					}
-				);
-		{% endfor %}
+    $(document).ready(function () {
+//限制字符个数
+        $(".articles").each(function () {
+            var maxwidth = 100;
+            if ($(this).text().length > maxwidth) {
+                $(this).text($(this).text().substring(0, maxwidth));
+                $(this).html($(this).html() + '...')
+                ;
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        {% for news in data.news_list %}
+            $("#{{ news.news.id }}").click(
+                function () {
+                    var news_id = "{{news.news.id}}";
+                    $.get(
+                        "/count_click_times/", {'news_id': news_id, "user_name": "{{data.user_name}}"},
+                        function (ret) {
+                            $('#result').html(ret.result)
+                        }
+                    )
+                }
+            );
+        {% endfor %}
     });
 
 </script>
 {% endblock %}
-
 
 

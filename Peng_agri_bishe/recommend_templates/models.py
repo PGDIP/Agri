@@ -35,6 +35,6 @@ class price(Document):
 class page(Document):
     jieba_cut_content=StringField(default=None)
     title = StringField(required=True)
-    content = DictField(required=True)
+    content = DictField(required=None)
     class_name = StringField(required=True)
     pageId = IntField(required=True)

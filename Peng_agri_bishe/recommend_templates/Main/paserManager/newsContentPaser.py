@@ -140,7 +140,6 @@ def paserClass4():
 
                 for seg in segs:
                     seg = seg.encode('utf-8')
-                    print (seg)
                     if is_chinese(seg):
                         final += seg
                 seg_list = jieba.cut(final, cut_all=False)

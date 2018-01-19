@@ -1,0 +1,12 @@
+certifi==2017.11.5
+chardet==3.0.4
+colorama==0.3.9
+docopt==0.6.2
+idna==2.6
+pickleshare==0.7.4
+pipreqs==0.4.9
+Pygments==2.2.0
+requests==2.18.4
+urllib3==1.22
+yarg==0.1.9
+youtube-dl==2017.11.6

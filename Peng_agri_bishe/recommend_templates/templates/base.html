@@ -44,14 +44,14 @@
         <li role="presentation" class="active"><a href="/class_3">果蔬种植</a></li>
         <li role="presentation"><a href="/class_4">市场价格</a></li>
         <li role="presentation"><a href="/class_5">政策法规</a></li>
-        {% ifequal user_name None %}
+        {% ifequal data.user_name None %}
             <li class="pull-right " role="presentation"><a href="/login"> 登录 </a></li>
             <li class="pull-right " role="presentation"><a href="/register"> 注册 </a></li>
         {% else %}
             <li role="presentation"><a href="/history">历史浏览</a></li>
             <li role="presentation"><a href="/myRecommend">我的推荐</a></li>
             <li class="pull-right " role="presentation"><a href="/subLogout"> 登出 </a></li>
-            <li class="pull-right " role="presentation"><a href="#"> {{ user_name }} </a></li>
+            <li class="pull-right " role="presentation"><a href="#"> {{ data.user_name }} </a></li>
         {% endifequal %}
     </ul>
 </div>
@@ -65,6 +65,7 @@
 </body>
 
 {% block script %}{% endblock %}
+{% block style %} {% endblock %}
 </html>
 
 

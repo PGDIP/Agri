@@ -31,13 +31,14 @@ def testTF_IDF():
 
 
 def get_K_nearst_love(K,news_id_list):
-    print( "get_K_nearst_love")
-    knn_log = pd.read_csv(root_path + "/data/key_bucket.csv");
+    knn_log = pd.read_csv(root_path + "/data/key_bucket.csv",encoding='GBK')
+    print(knn_log)
     data = dict() # 保存近邻数据{key=近邻下标,value=被推荐次数}
     own_id = set() #保存用户已经浏览过的数据
     for news_id in news_id_list:
         knbrs = knn_log["k_nbrs"][knn_log["_id"]==news_id].values
-        if len(knbrs) == 0: continue;
+        if len(knbrs) == 0:
+            continue
         knbrs = knbrs[0].split(" ")
         for i in range(len(knbrs)):
             key = int(knbrs[i])
@@ -46,9 +47,11 @@ def get_K_nearst_love(K,news_id_list):
                 data[ key ] = 1
             else: data[ key ] += 1
     # 去除用户已经看过的新闻，但又出现在推荐列表中的数据
+    print(data)
     for key,value in data.items():
         if key in own_id:
-            data.pop(key)
+            pass
+            #data.pop(key)
     data = sorted( data.items(), key=lambda x:x[1], reverse=True ) # 此时的data是一个list
     ans = [] # [(10, 6), (29, 5), (20, 5), (12, 4), (24, 4)]
     for i in range(min(K,len(data))):
@@ -58,15 +61,12 @@ def get_K_nearst_love(K,news_id_list):
 if __name__ == "__main__":
     #testTF_IDF()
     news_id_list = [   
-        "59954610c1f4a507809402f4",
-        "59954610c1f4a507809402f6",
-        "59954610c1f4a507809402f1",
-        "59954610c1f4a507809403d9",
-        "59954610c1f4a50780940306",
-        "59954610c1f4a5078094037d",
-        "59954610c1f4a50780940324",
-        "59954610c1f4a5078094030b",
-        "59954610c1f4a507809402ef",
+        "59c5f5b7ac7a4f1ca0e42cdf",
+        "59c5f5afac7a4f1f249909c4",
+        "59cf5c19ac7a4f2b8c61f4e2",
+        "59c5f5beac7a4f0d08822b89",
+        "59ed903f632f330d34425676",
+        "59c5f5a9ac7a4f0d08822b87"
     ]
     print (get_K_nearst_love(3,news_id_list))
 

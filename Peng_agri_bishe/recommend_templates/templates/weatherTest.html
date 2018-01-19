@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>天气频道</title>
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+{% extends 'base.html' %}
+{% load staticfiles %}
 
-    <script src='http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js'></script>
-    <script src="../static/js/alert.js"></script>
+{% block style %}
     <style>
         .seven_day,.seven_day tr td {
             border: 1px solid #0094ff;
@@ -49,6 +38,10 @@
 	    html{overflow:hidden}
 
     </style>
+{% endblock %}
+
+{% block script %}
+    <script src="../static/js/alert.js"></script>
     <script>
         function refresh() {
             window.location.replace({% url 'weather' %})
@@ -78,29 +71,9 @@
             })
         }
     </script>
-</head>
+{% endblock %}
 
-<body>
-    <div class="text-center" >
-        <img src="/static/img/news.png" alt="logo" id="image" class="text-center"/>
-		<ul id = "result" class="nav nav-tabs">
-			<li role="presentation" class="active"><a href="/index">主页</a></li>
-			<li role="presentation"><a href="{% url 'weather' %}">天气</a></li>
-			<li role="presentation"><a href="/class_2">病虫防治</a></li>
-			<li role="presentation"><a href="/class_3">果蔬种植</a></li>
-			<li role="presentation"><a href="/class_4">市场价格</a></li>
-			<li role="presentation"><a href="/class_5">政策法规</a></li>
-			{% ifequal user_name None %}
-				<li class = "pull-right " role="presentation"> <a href="/login"> 登录 </a> </li>
-				<li class = "pull-right " role="presentation"> <a href="/register"> 注册 </a> </li>
-			{% else %}
-				<li role="presentation"><a href="/history">历史浏览</a></li>
-				<li role="presentation"><a href="/myRecommend">我的推荐</a></li>
-				<li class = "pull-right " role="presentation"> <a href="/subLogout"> 登出 </a> </li>
-				<li class = "pull-right " role="presentation"> <a href="#"> {{ user_name  }} </a> </li>
-			{% endifequal %}
-		</ul>
-	</div>
+{% block content %}
 
     <div>
         <h6>
@@ -148,8 +121,7 @@
         <div id="7d" class="content" align="center">
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
 
 
 {#                    success: function (data) {#}

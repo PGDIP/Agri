@@ -39,11 +39,20 @@ class HttpUtil():
         ]
 
     def getHtml(self, url, timeout, num_retries, proxy=None):  ##给函数一个默认参数proxy为空
+        # try:
+        #     headers = self.headers
+        #     headers['User-Agent'] = random.choice(self.user_agent_list)
+        #     response = requests.get(url, headers=headers, timeout=timeout)  ##这样服务器就会以为我们是真的浏览器了
+        #     response.encoding = self.code
+        #     html = response.text
+        #     return html
+        # except requests.RequestException as e:
+        #     print(e)
         if proxy == None:  ##当代理为空时，不使用代理获取response（别忘了response啥哦！之前说过了！！）
             try:
                 headers = self.headers
                 headers['User-Agent'] = random.choice(self.user_agent_list)
-                response = requests.get(url, headers={'User-Agent': 0}, timeout=timeout)  ##这样服务器就会以为我们是真的浏览器了
+                response = requests.get(url, headers=headers, timeout=timeout)  ##这样服务器就会以为我们是真的浏览器了
                 response.encoding = self.code
                 html = response.text
                 return html
@@ -81,8 +90,10 @@ class HttpUtil():
                     print(u'当前代理是：', proxy)
                     return self.getHtml(url, timeout, num_retries - 1, proxy)
                 else:
-                    print(u'代理也不好使了！取消代理,  100s 后开始')
-                    time.sleep(100)
+                    print(u'代理也不好使了！取消代理,  10s 重新后开始')
+                    time.sleep(10)
+                    # ci = CorrectIp()
+                    # ci.getCorrectIp()  #代理ip
                     return self.getHtml(url, 3, 6)
 
     def webDriver(self):
@@ -99,6 +110,7 @@ class HttpUtil():
         return cookiestr + '\n' + source
 
     def getData(self, html, key, flag):
+        result = ''
         if flag == 1:
             result = re.findall(key, html)
         if flag == 2:
@@ -167,61 +179,6 @@ class CorrectIp():
                             'http://www.xicidaili.com/wn/', 'http://www.xicidaili.com/wt/']
         self.ipList = []
 
-    # def getProxyIp(self):
-    #     headers = {
-    #         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    #         'Accept-Encoding': 'gzip, deflate',
-    #         'Accept-Language': 'zh-CN,zh;q=0.9',
-    #         'Upgrade-Insecure-Requests': '1',
-    #         'Connection': 'keep-alive',
-    #         'Host': 'www.goubanjia.com',
-    #         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
-    #         'Referer': 'http://www.goubanjia.com/',
-    #         'Cookie': 'UM_distinctid=15f49ec60ab27-0d067d232c68e-5b4a2c1d-100200-15f49ec60ac1f8; JSESSIONID=AB5E98C8BEA481A6089B79D7C2752D44; CNZZDATA1253707717=435162388-1508773334-null%7C1508827880; Hm_lvt_2e4ebee39b2c69a3920a396b87bbb8cc=1508773749,1508815637,1508827881,1508832505; Hm_lpvt_2e4ebee39b2c69a3920a396b87bbb8cc=1508832905'
-    #     }
-    #     ipList = []
-    #     urlList = []
-    #     from recommend_templates.Main.paserManager.util import HttpUtil
-    #     util = HttpUtil('http://www.goubanjia.com',headers=headers , code='utf-8')
-    #     for url in self.baseUrlList:
-    #         for index in range(1,5):
-    #             urlList.append(url+str(index)+'.shtml')
-    #
-    #     def getOnePageIp(url):
-    #         import time
-    #         from bs4 import BeautifulSoup
-    #         from recommend_templates.Main.paserManager.tools.replaceTool import Tool
-    #         response = util.getHtml(url,3,3)
-    #         tdIpList = BeautifulSoup(response,'lxml').find('div',id='list').find_all('td',class_ = 'ip')
-    #         tool = Tool()
-    #         for ip in tdIpList:
-    #             print(ip)
-    #             pattern = re.compile(r':|<span.*?>(.*?)</span>|<div.*?>(.*?)</div>',re.S)
-    #             ip_ = []
-    #             for ip in re.findall(pattern , str(ip)):
-    #                 print(ip)
-    #                 if ip[0] != '':
-    #                     ip_.append(ip[0])
-    #                 elif ip[1] != '':
-    #                     ip_.append(ip[1])
-    #                 else:
-    #                     continue
-    #             ipList.append(ip_[0])
-    #         time.sleep(3)
-    #         print(ipList)
-    #     getOnePageIp('http://www.goubanjia.com/free/index1.shtml')
-    #
-    #     # threads = []
-    #     # for i in range(len(urlList)):
-    #     #     import threading
-    #     #     thread = threading.Thread(target=getOnePageIp, name='...线程:....' + str(i), args=(urlList[i],))
-    #     #     threads.append(thread)
-    #     #     thread.start()
-    #     # # 阻塞主进程，等待所有子线程结束
-    #     # for thread in threads:
-    #     #     thread.join()
-    #     return ipList
-
     def getOnePageIp(self, url):
         import time
         from bs4 import BeautifulSoup
@@ -274,14 +231,13 @@ class CorrectIp():
 
     def Ip(self, proxy):
         headers = {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Encoding': 'gzip, deflate',
-            'Accept-Language': 'zh-CN,zh;q=0.9',
-            'Cache-Control': 'max-age=0',
-            'Connection': 'keep-alive',
-            'Host': 'www.gengzhongbang.com',
-            'Referer': 'https://www.baidu.com/link?url=TdtRy_RwYTTH1xVm1JWrX6N0YtG4DLBBEVVx69kmFNcEB9No-kySt6EPcNKdqUzF&wd=&eqid=e7f0f2410000192a0000000359f17f6d',
-            'Upgrade-Insecure-Requests': '1',
+            'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding':'gzip, deflate, br',
+            'Accept-Language':'zh-CN,zh;q=0.9',
+            'Cache-Control':'max-age=0',
+            'Connection':'keep-alive',
+            'Host':'www.gengzhongbang.com',
+            'Upgrade-Insecure-Requests':'1',
             'User-Agent': random.choice(self.user_agent_list)
         }
         url = 'http://www.gengzhongbang.com/'  # "http://www.ip138.com"
@@ -290,7 +246,7 @@ class CorrectIp():
             if res.status_code == 200:
                 print('.......可用ip.......', proxy)
                 from recommend_templates.Main.main import ROOT_PATH
-                with open(ROOT_PATH[:-12] + r'io\correctIp.txt', 'a+') as f:
+                with open(ROOT_PATH + r'\io\correctIp.txt', 'a+') as f:
                     f.writelines(proxy + ' , ')
         except Exception as e:
             print(e)
@@ -311,7 +267,7 @@ class CorrectIp():
 
     def proxyIp(self):
         from recommend_templates.Main.main import ROOT_PATH
-        with open(ROOT_PATH[:-12] + r'io\correctIp.txt', 'r') as f:
+        with open(ROOT_PATH + r'\io\correctIp.txt', 'r') as f:
             ipList = f.read()
         return ipList.split(',')
 

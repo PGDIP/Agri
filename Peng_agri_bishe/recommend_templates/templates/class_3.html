@@ -4,13 +4,12 @@
 {% block content %}
 <div class="wp">
     <div class="bm_c xld">
-        {% for news in data %}
-            <dl class="bbda cl">
-                <dt class="xs2"><a class="xi2" href="{% url 'test' news.news.pageId %}">{{ news.news.title }}</a>
+        {% for news in data.news_list %}
+            <dl class="bbda cl" id="{{ news.news.id }}">
+                <dt class="xs2"><a class="xi2" href="{% url 'article' news.news.pageId %}">{{ news.news.title }}</a>
                 </dt>
                 <dd class="xs2 cl">
-                    <div class="atc"><a title={{ news.news.title }}><img
-                            src={% static 'img/news.png' %} alt={{ news.title }}></a>
+                    <div class="atc"><a title={{ news.news.title }}><img src={% static 'img/news.png' %} alt={{ news.title }}></a>
 
                     </div>
                     <div class="articles">{{ news.content }}</div>
@@ -46,12 +45,12 @@
 </script>
 <script>
     $(document).ready(function () {
-        {% for news in news_list %}
-            $("{{news.ajax_id}}").click(
+        {% for news in data.news_list %}
+            $("#{{ news.news.id }}").click(
                 function () {
-                    var news_id = "{{news.news_id}}";
+                    var news_id = "{{news.news.id}}";
                     $.get(
-                        "/count_click_times/", {'news_id': news_id, "user_name": "{{user_name}}"},
+                        "/count_click_times/", {'news_id': news_id, "user_name": "{{data.user_name}}"},
                         function (ret) {
                             $('#result').html(ret.result)
                         }

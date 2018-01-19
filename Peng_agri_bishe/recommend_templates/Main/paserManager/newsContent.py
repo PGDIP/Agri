@@ -1,18 +1,23 @@
+# -*- coding:utf-8 -*-
 import re
 import multiprocessing
+import threading
+
 from bs4 import BeautifulSoup
 import time
 import json
 import requests
 from multiprocessing import Pool
 import os
+import jieba
 from urllib import error
 
 from recommend_templates.Main.paserManager.tools.random_num import random_num
 from recommend_templates.Main.paserManager.tools.replaceTool import Tool
-from recommend_templates.Main.paserManager.util import HttpUtil
+from recommend_templates.Main.paserManager.util import HttpUtil, CorrectIp
 from recommend_templates.models import page
 import random
+
 
 def getId():
     isHave = True
@@ -27,30 +32,32 @@ def getId():
 
 
 user_agent_list = [
-            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
-            "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
-            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
-            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
-            "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1",
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5",
-            "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",
-            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
-            "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
-            "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
-        ]
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
+    "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6",
+    "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5",
+    "Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3",
+    "Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
+    "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
+]
+
 
 # 耕种帮
-class GZB ():
-    def __init__(self , ROOT_PATH):
+class GZB():
+    def __init__(self, ROOT_PATH):
         self.ROOT_PATH = ROOT_PATH
+
     head = {
         'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6",
         'Accept-Language': 'zh-CN,zh;q=0.8',
@@ -59,51 +66,65 @@ class GZB ():
     }
     baseUrl = 'http://www.gengzhongbang.com/'
     util = HttpUtil(url=baseUrl, headers=head, code='gbk')
+    ci = CorrectIp()
 
     # 得到文章
     # socket.setdefaulttimeout(100)  # 设置socket层的超时时间为20秒
-    def dataHandle(self, url, class_name):
-        with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'r') as f:
+    def dataHandle(self, dict={}):
+        url = dict['url']
+        class_name = dict['class_name']
+        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'r') as f:
             if url in f.readline():
                 print('...................已经爬取过了..............')
             else:
-                tool = Tool()
-                html = self.util.getHtml(url,3,6) #分别是 url，超时时间，重复几次
+                html = self.util.getHtml(url, 3, 6, str(random.choice(self.ci.proxyIp())).strip())  # 分别是 url，超时时间，重复几次
                 key = re.compile(
                     r'<div class="bm vw">.*?<h1 class="ph">(.*?) </h1>.*?<td id="article_content">(.*?)</td>.*?</div>',
                     re.S)
                 result = self.util.getData(html=html, key=key, flag=1)
                 title = result[0][0]  ########################
-
-                if page.objects.filter(title=title):
+                title_pattern = re.compile(u'视频|实拍', re.S)
+                if page.objects.filter(title=title) or re.findall(title_pattern, str(title)):
                     print('%s___标题为 %s ......已经存在.......' % (class_name, title))
                     time.sleep(3)
                 else:
                     content = result[0][1]
-                    pattern_text = re.compile(r'<div>(.*?)</div>', re.S)
-                    pattern_img = re.compile(r'<img src="(.*?)".*?>', re.S)
-                    # print(type(tool.replace(str(re.findall(pattern_text,content))))) #str
-                    data = dict()
-                    for index, item in enumerate(re.findall(pattern_text, content), 0):
-                        if re.findall(pattern_img, item):
-                            imgUrl = self.baseUrl + re.findall(pattern_img, item)[0]
-                            fileName = 'image'+ imgUrl.split('/')[-1] #'img' + imgUrl[62:72] + str(index) + '.jpg'
-                            data['image' + str(index)] = self.util.saveImg(imgUrl, fileName)
+                    # 去除 script
+                    soup = BeautifulSoup(content, "html.parser")
+                    try:
+                        soup.script.decompose()  # 删除页面script标签
+                    except:
+                        pass
+
+                    pageId = getId()
+                    cate = page(jieba_cut_content=" ".join(jieba.cut(str(soup.get_text()).strip())), title=title,
+                                class_name=class_name, pageId=pageId)
+                    cate.save()
+                    data = {}
+                    for index, item in enumerate(soup.find_all('div'), 0):
+                        img_soup = BeautifulSoup(str(item), "html.parser")
+                        if img_soup.find("img"):
+                            imgUrl = self.baseUrl + soup.find("img")['src']
+                            # fileName = 'image' + imgUrl.split('/')[-1]  # 'img' + imgUrl[62:72] + str(index) + '.jpg'
+                            data['image' + str(index)] = imgUrl  # self.util.saveImg(imgUrl, fileName)
                             # print(imgUrl)
                         else:
-                            data['content' + str(index)] = tool.replace(item)
+                            data['content' + str(index)] = (item.get_text()).strip()
 
-                    print('正在存储.....%s___%s' % (class_name, title))
-                    cate = page(jieba_cut_content='', title=title, content=data, class_name=class_name, pageId=getId())
-                    cate.save()
-                    with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'a+') as f:
-                        f.writelines(url + ' , ')
+                    article = page.objects(pageId=pageId).first()
+                    if article.content == {}:
+                        article.delete()
+                    else:
+                        print('正在存储.....%s___%s' % (class_name, title))
+                        page.objects(title=title, class_name=class_name, pageId=pageId).update(content=data)
+                        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'a+') as f:
+                            f.writelines(url + ' , ')
         time.sleep(3)
 
     # 得到分类网址
     def get_url_list(self):
         util = HttpUtil(url=self.baseUrl, headers=self.head, code='gbk')
-        html = util.getHtml(self.baseUrl,3,6)
+        html = util.getHtml(self.baseUrl, 3, 6)
         soup = BeautifulSoup(html, 'lxml')
         data = soup.find_all('ul', class_='p_pop h_pop')
         pattern = re.compile(u'.*?视频|作用|大全.*?', re.S)
@@ -134,44 +155,61 @@ class GZB ():
         return urllist
 
     # 得到全部文章内容
-    def get_url_from_each_page(self):
+    def main_process(self):
         urllist = self.get_url_list()
-        for url_item in urllist:
-            # page_url = url_item['a'] + 'index.php?page='
-            # class_name = url_item['name'],
-            list = []
-            for page_num in range(1, 5):
-                dict = {}
-                dict['class_name'] = url_item['name']
-                dict['page_url'] = url_item['a'] + 'index.php?page=' + str(page_num)
-                list.append(dict)
-
-            cpu = multiprocessing.cpu_count()
-            pool = Pool(processes=cpu)  # 建立进程池
-            pool.map(self.main_process, list)  # 映射到主函数中进行循环
-            time.sleep(20)  # 一个分类采集完 等待100s
+        cpu = multiprocessing.cpu_count()
+        pool = Pool(processes=cpu)  # 建立进程池
+        pool.map(self.add_thread, urllist)  # 映射到主函数中进行循环
+        time.sleep(10)  # 一个分类采集完 等待100s
         print('[耕种帮]..数据采集完毕.....')
 
-    def main_process(self, list=[]):  # 主进程
-        class_name = list['class_name']
-        page_url = list['page_url']
-        print('主进程ID：%s , 类名：%s ,页地址：%s' % (os.getpid(), class_name, page_url))
-        # print(class_name,page_url)
+    def add_thread(self, urllist=[]):  # 加入线程
+        print('主进程:', os.getpid(), '<<<类名:', urllist['name'], '<<<地址:', urllist['a'])
+        list = []
+        for page_num in range(1, 300):
+            dict = {}
+            dict['class_name'] = urllist['name']
+            dict['page_url'] = urllist['a'] + 'index.php?page=' + str(page_num)
+            list.append(dict)
+            self.each_page_urls(dict)
+            # threads = []
+            # for i in range(3):#int(len(list)/10)
+            #     thread = threading.Thread(target=self.each_page_urls, name='...线程:....' + str(i), args=(list[i],))
+            #     threads.append(thread)
+            #     thread.start()
+            # # 阻塞主进程，等待所有子线程结束
+            # for thread in threads:
+            #     thread.join()
+            time.sleep(3)
+
+    def each_page_urls(self, dict={}):
+        class_name = dict['class_name']  # 类名
+        page_url = dict['page_url']  # 每一页的地址
         key = re.compile(r'<dt class="xs2">.*?<a href="(.*?)".*?>.*?</a>.*?</dt>', re.S)
-        page_html = self.util.getHtml(page_url,3,6) #requests.get(page_url, headers=self.head)
+        page_html = self.util.getHtml(page_url, 3, 6, str(
+            random.choice(self.ci.proxyIp())).strip())  # requests.get(page_url, headers=self.head)
         url_data = self.util.getData(str(page_html), key, flag=1)
-        if url_data:
-            for url in url_data:
-                # print(url)
-                self.dataHandle(url, class_name)
+        all_url = []
+        for url in url_data:
+            all_url.append({'class_name': class_name, 'url': url})
+        if all_url:
+            threads = []
+            for i in range(len(all_url)):
+                thread = threading.Thread(target=self.dataHandle, name='...线程:....' + str(i), args=(all_url[i],))
+                threads.append(thread)
+                thread.start()
+            # 阻塞主进程，等待所有子线程结束
+            for thread in threads:
+                thread.join()
         else:
             print('没文章了.........')
-        time.sleep(10)  # 每一页采集完等待10s
+
 
 # 中国农业科技信息网
 class ZGNYKJ():
-    def __init__(self,ROOT_PATH):
+    def __init__(self, ROOT_PATH):
         self.ROOT_PATH = ROOT_PATH
+
     contentCount = []
     tool = Tool()
     headers = {
@@ -182,11 +220,11 @@ class ZGNYKJ():
     }
     baseUrl = 'http://www.cast.net.cn/'
     util = HttpUtil(url=baseUrl, headers=headers, code='gb2312')
+    ci = CorrectIp()
 
     def getClassification(self, url):
         url_list = []
-        html = self.util.getHtml(url + 'index.shtml',3,6)
-        time.sleep(1)
+        html = self.util.getHtml(url + 'index.shtml', 3, 6)
         key = re.compile(r'<div class="menu">.*?<h3>.*?</h3>(.*?)<h4>.*?</h4>.*?</div>', re.S)
         result = self.util.getData(html, key, 1)[0]
         soup = BeautifulSoup(result, 'lxml')
@@ -202,7 +240,6 @@ class ZGNYKJ():
                 dict['url'] = url + result_[0][:-6]
                 dict['class_name'] = result_[1]
                 url_list.append(dict)
-        time.sleep(1)
         return url_list
 
     def get_all_class_url(self):
@@ -211,51 +248,69 @@ class ZGNYKJ():
         for url in base_url_list:
             for item in self.getClassification(url):
                 url = item['url']
-                if url == 'http://www.cast.net.cn/kj/syjs/index.shtml':
+                if url == 'http://www.cast.net.cn/kj/syjs/index':
                     # 实用技术 下的分类
                     for item1 in self.getClassification('http://www.cast.net.cn/kj/syjs/'):
                         url_class_list.append(item1)
                 else:  # 不用else试试，哈哈
                     url_class_list.append(item)
-            break
         return url_class_list
 
+
+
     def main(self):
-        url_list = self.get_all_class_url()
-        for url in url_list:  # http://www.cast.net.cn/zx/kjyw/index   '.shtml'
-            class_name = url['class_name']
-            html = self.util.getHtml(url['url'] + '.shtml',3,6)
-            time.sleep(1)
-            soup = BeautifulSoup(html, 'lxml')
-            page = soup.find('div', class_='select').get_text()
-            pattern = re.compile(u'.*?分(.*?)页.*?')
-            page_num = re.findall(pattern, str(page))[0]
-            print('共有..', page_num, '..页')
-            urlList = []
-            for index in range(0, 22):
-                urlDict = {}
-                if index == 0:
-                    url_index = 'index'
-                else:
-                    url_index = 'index' + str(index)
-                urlDict['index'] = url_index
-                urlDict['url'] = url['url'][:-5]
-                urlDict['class_name'] = class_name
-                urlList.append(urlDict)
+        cpu = multiprocessing.cpu_count()
+        pool = Pool(processes=cpu)  # 建立进程池
+        pool.map(self.getOnePageUrl, self.get_all_class_url())  # 映射到主函数中进行循环
+        time.sleep(10) #一个分类采集完  暂停10秒
 
-            cpu = multiprocessing.cpu_count()
-            pool = Pool(processes=cpu)  # 建立进程池
-            result = pool.map(self.get_each_page_url, urlList)  # 映射到主函数中进行循环
-            if result == 'break':
-                break
-            break
 
-    def get_one_page_content(self, class_name, title, url):
-        with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'r') as f:
+    def getOnePageUrl(self,Dict):
+        print('主进程:', os.getpid(), '<<<类名:', Dict['class_name'], '<<<地址:', Dict['url'])
+        for index in range(0, 22):
+            urlDict = {}
+            if index == 0:
+                url_index = 'index'
+            else:
+                url_index = 'index' + str(index)
+            urlDict['index'] = url_index
+            urlDict['url'] = Dict['url'][:-5]
+            urlDict['class_name'] = Dict['class_name']
+            self.addThread(urlDict)
+            time.sleep(2)
+
+    def addThread(self, urlList):
+        onePageUrlList = []
+        class_name = urlList['class_name']
+        html = self.util.getHtml(urlList['url'] + urlList['index'] + '.shtml', 3, 6,str(random.choice(self.ci.proxyIp())).strip())
+        soup = BeautifulSoup(html, 'lxml')
+        if soup.find('ul', id='ul'):
+            for li in soup.find('ul', id='ul').find_all('li'):
+                oneArticleUrl = {}
+                oneArticleUrl['class_name'] = class_name
+                oneArticleUrl['title'] = li.a.get_text().strip()
+                oneArticleUrl['url'] = urlList['url'] + li.a['href']
+                onePageUrlList.append(oneArticleUrl)
+
+
+        threads = []
+        for i in range(len(onePageUrlList)):
+            thread = threading.Thread(target=self.get_one_page_content, name='...线程:....' + str(i), args=(onePageUrlList[i],))
+            threads.append(thread)
+            thread.start()
+        # 阻塞主进程，等待所有子线程结束
+        for thread in threads:
+            thread.join()
+
+    def get_one_page_content(self, dict):
+        url = dict['url']
+        class_name = dict['class_name']
+        title = dict['title']
+        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'r') as f:
             if url in f.readline():
                 print('...................已经爬取过了..............')
             else:
-                html = self.util.getHtml(url,3,6)
+                html = self.util.getHtml(url, 3, 6,str(random.choice(self.ci.proxyIp())).strip())
                 soup = BeautifulSoup(html, 'lxml')
                 # title = ''#soup.find('div', class_='title4').get_text().strip()
                 zhengwen = soup.find('div', class_='zhengwen')
@@ -268,6 +323,23 @@ class ZGNYKJ():
                 if page.objects.filter(title=title):
                     print(' .....已经存在.....', 'class_name:', class_name, ' title:', title, ' URL:', url)
                 else:
+                    pageId = getId()
+
+                    # # 去除词频统计中的数字与字母，尚未成功
+                    # segs = jieba.analyse.extract_tags(str(self.tool.replace(str(zhengwen))).encode("utf-8"))
+                    # final = ''
+                    # for seg in segs:
+                    #     seg = seg.encode('utf-8')
+                    #     if is_chinese(seg):
+                    #         final += seg
+                    # seg_list = jieba.cut(final, cut_all=False)
+                    # final = " ".join(seg_list)
+                    # #######end
+
+
+                    cate = page(jieba_cut_content=" ".join(jieba.cut(str(self.tool.replace(str(zhengwen))))),
+                                title=title, class_name=class_name, pageId=pageId)
+                    cate.save()
                     if contentListSpan:
                         pattern = re.compile(u'.*?记者.*?', re.S)
                         count = 0
@@ -297,11 +369,13 @@ class ZGNYKJ():
                             if imgurl[0:4] == 'http':
                                 imgurl = url1['src']
                             else:
-                                imgurl = self.baseUrl+imgurl[6:]
-                            imgName = 'image' + imgurl.split('/')[-1]
-                            imagePath = self.util.saveImg(imgurl,imgName)
-                            contentDict['image' + str(index)] = imagePath
+                                imgurl = self.baseUrl + imgurl[6:]
+                            # imgName = 'image' + imgurl.split('/')[-1]
+                            # imagePath = self.util.saveImg(imgurl, imgName)
+                            contentDict['image' + str(index)] = imgurl  # imagePath
                             imageCount += 1
+
+
                     if contentListP:
                         pattern = re.compile(u'.*?记者.*?', re.S)
                         count = 0
@@ -327,39 +401,33 @@ class ZGNYKJ():
                             count_img += 1
                     for key, value in contentDict.items():
                         resultDict[key] = value
-                    print('正在存储......','class_name:',class_name,' title:',title)
-                    cate = page(jieba_cut_content='', title=title, content=resultDict, class_name=class_name, pageId=getId())
-                    cate.save()
-                    self.contentCount.append(url)
-                    with open(self.ROOT_PATH+r'\io\isExistUrl.txt', 'a+') as f:
-                        f.writelines(url + ' , ')
-        return self.contentCount
 
-    def get_each_page_url(self, urlList):
-        class_name = urlList['class_name']
-        print('>>>>>>>>>>主进程ID:', os.getpid(), ' 分类名:', class_name, ' URL:',urlList['url'] + urlList['index'] + '.shtml')
-        html = self.util.getHtml(urlList['url'] + urlList['index'] + '.shtml',3,6)
-        soup = BeautifulSoup(html, 'lxml')
-        if soup.find('ul', id='ul'):
-            for li in soup.find('ul', id='ul').find_all('li'):
-                self.get_one_page_content(class_name, li.a.get_text().strip(), urlList['url'] + li.a['href'])
-        else:
-            return 'break'
-        print( '................../////////////////////..............%s................///////////////////////..................' %urlList['index'][5:])
-        time.sleep(5)
+                    article = page.objects(pageId=pageId).first()
+                    if article.content == {}:
+                        article.delete()
+                    else:
+                        print('正在存储......', 'class_name:', class_name, ' title:', title)
+                        page.objects(title=title, class_name=class_name, pageId=pageId).update(content=resultDict)
+                        # cate.save()
+                        self.contentCount.append(url)
+                        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'a+') as f:
+                            f.writelines(url + ' , ')
+        time.sleep(3)
+
+
 
 
 def all_main():
     ROOT_PATH = os.getcwd()
     #  .........耕种帮.........
     gzb = GZB(ROOT_PATH[:-13])
-    gzb.get_url_from_each_page()
+    gzb.main_process()
 
     #  .........天气.........
     # weather = Weather()
     # weather_list = weather.getWeather()
 
-    #  .........中国农业科技.........
+    # .........中国农业科技.........
     # zgny = ZGNYKJ(ROOT_PATH[:-13])
     # zgny.main()
 
@@ -2867,6 +2935,17 @@ class Weather():
         return weatherList
 
 
+def is_chinese(uchar):
+    """判断一个unicode是否是汉字"""
+
+    if uchar >= u'/u4e00' and uchar <= u'/u9fa5':
+
+        return True
+
+    else:
+
+        return False
+
+
 if __name__ == '__main__':
     all_main()
-
