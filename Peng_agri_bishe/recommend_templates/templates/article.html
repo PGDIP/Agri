@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href={% static 'css/homepage.css' %}>
     <title>{{ articles.title }}</title>
 </head>
-<body>
+<body class='bm_c xld'>
         <h1 align="center">{{ articles.title }}{{ articles.class_name }}</h1>
         <div width="600">
             <div width="600">
@@ -23,9 +23,16 @@
             {#            <h1>{{ key|truncatechars:6}}</h1>#}
             {#            <h1>{{ key|slice:":3"}}</h1>#}
                         {% ifequal key|slice:":3" 'con' %}
-                            <p>{{ value|linebreaksbr }}</p>
+                            {% ifnotequal value "" %}
+                                <p>{{ value|linebreaksbr }}</p>
+                            {% endifnotequal %}
+
                         {% else %}
-                            <img class="st_camera" src="{{ value }}" width="600" height="400"/>
+                            {% ifnotequal value "" %}
+                                <div align="center">
+                                    <img class="st_camera" src="{{ value }}" width="600" height="450"/>
+                                </div>
+                            {% endifnotequal %}
                         {% endifequal %}
                     {% endif %}
                 {% endfor %}

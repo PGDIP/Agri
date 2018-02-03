@@ -58,13 +58,13 @@ class HttpUtil():
                 return html
             except:  ##如过上面的代码执行报错则执行下面的代码
                 if num_retries > 0:  ##num_retries是我们限定的重试次数
-                    time.sleep(5)  ##延迟十秒
-                    print(u'获取网页出错，5s后将获取倒数第：', num_retries, u'次')
+                    time.sleep(2)  ##延迟十秒
+                    print(u'获取网页出错，2s后将获取倒数第：', num_retries, u'次')
                     return self.getHtml(url, timeout, num_retries - 1)  ##调用自身 并将次数减1
                 else:
                     print(u'开始使用代理')
                     ci = CorrectIp()
-                    time.sleep(5)
+                    time.sleep(2)
                     if len(ci.proxyIp()) <= 1:
                         print('可用代理 ip 为空，正在重新获取')
                         ci.getProxyIp()
@@ -82,11 +82,11 @@ class HttpUtil():
                 return html
             except:
                 if num_retries > 0:
-                    time.sleep(5)
+                    time.sleep(2)
                     ipList = CorrectIp().proxyIp()
                     ip = ''.join(str(random.choice(ipList)).strip())  ##下面有解释哦
                     proxy = {'http': ip}
-                    print(u'正在更换代理，5s后将重新获取倒数第', num_retries, u'次')
+                    print(u'正在更换代理，2s后将重新获取倒数第', num_retries, u'次')
                     print(u'当前代理是：', proxy)
                     return self.getHtml(url, timeout, num_retries - 1, proxy)
                 else:
@@ -107,7 +107,7 @@ class HttpUtil():
         cookiestr = ';'.join(item for item in cookie)
         time.sleep(5)
         driver.quit()  # 关闭浏览器
-        return cookiestr + '\n' + source
+        return cookiestr + '/n' + source
 
     def getData(self, html, key, flag):
         result = ''
@@ -128,7 +128,7 @@ class HttpUtil():
         # image.save(imagePath)
         try:
             img = requests.get(imageURL)
-            rootPath = r'D:\image_Article\\'
+            rootPath = r'D:/image_Article//'
             self.mkDir(rootPath)  # 创建目录
             imagePath = rootPath + fileName
             try:
@@ -139,14 +139,14 @@ class HttpUtil():
                     # f.close()
             except:
                 return None
-            path = 'image_Article\\' + fileName
+            path = 'image_Article//' + fileName
             return path
         except:
             return None
 
     def mkDir(self, rootPath):
         path = rootPath.strip()
-        path = path.strip('\\')
+        path = path.strip('//')
         isExists = os.path.exists(path)
         if not isExists:
             os.makedirs(path)
@@ -246,7 +246,7 @@ class CorrectIp():
             if res.status_code == 200:
                 print('.......可用ip.......', proxy)
                 from recommend_templates.Main.main import ROOT_PATH
-                with open(ROOT_PATH + r'\io\correctIp.txt', 'a+') as f:
+                with open(ROOT_PATH + r'/io/correctIp.txt', 'a+') as f:
                     f.writelines(proxy + ' , ')
         except Exception as e:
             print(e)
@@ -267,7 +267,7 @@ class CorrectIp():
 
     def proxyIp(self):
         from recommend_templates.Main.main import ROOT_PATH
-        with open(ROOT_PATH + r'\io\correctIp.txt', 'r') as f:
+        with open(ROOT_PATH + r'/io/correctIp.txt', 'r') as f:
             ipList = f.read()
         return ipList.split(',')
 

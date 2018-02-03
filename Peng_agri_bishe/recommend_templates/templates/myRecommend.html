@@ -11,18 +11,11 @@
 			{% for news in data.news_list %}
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="{% url 'article' news.news.pageId %}">
-							{{ news.news.title }}
-						</a>
+						<a class="xi2" href="{% url 'article' news.news.pageId %}">{{ news.news.title }}</a>
 						<a class = "pull-right " data-toggle="collapse" data-parent="#accordion" >
 							{{ news.news.class_name }}
 						</a>
 					</h4>
-				</div>
-				<div id={{ news.content_id }} class="panel-collapse" data-toggle="collapse">
-					<div class="panel-body">
-						{{ news.news.content }}
-					</div>
 				</div>
 			{% endfor %}
 		</div>

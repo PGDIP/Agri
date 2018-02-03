@@ -31,8 +31,7 @@ def testTF_IDF():
 
 
 def get_K_nearst_love(K,news_id_list):
-    knn_log = pd.read_csv(root_path + "/data/key_bucket.csv",encoding='GBK')
-    print(knn_log)
+    knn_log = pd.read_csv(root_path + "/data/key_bucket.csv",encoding='utf-8')
     data = dict() # 保存近邻数据{key=近邻下标,value=被推荐次数}
     own_id = set() #保存用户已经浏览过的数据
     for news_id in news_id_list:
@@ -47,7 +46,6 @@ def get_K_nearst_love(K,news_id_list):
                 data[ key ] = 1
             else: data[ key ] += 1
     # 去除用户已经看过的新闻，但又出现在推荐列表中的数据
-    print(data)
     for key,value in data.items():
         if key in own_id:
             pass

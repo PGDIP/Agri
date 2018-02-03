@@ -56,7 +56,34 @@ class Pagination(object):
 
     def page_str1(self):
         page_list1 = []
+        first = "<li class='first'><a href='/class_1?p=1'>首页</a></li>"
+        page_list1.append(first)
 
+        if self.current_page == 1:
+            prev = "<li class='prev'><a href='#'>上一页</a></li>"
+        else:
+            prev = "<li class='prev'><a href='/class_1?p=%s'>上一页</a></li>" % (self.current_page - 1,)
+        page_list1.append(prev)
+        for i in self.pager_num_range():
+            if i == self.current_page:
+                temp = "<li class='active'><a href='/class_1?p=%s'>%s</a></li>" % (i, i)
+            else:
+                temp = "<li><a href='/class_1?p=%s'>%s</a></li>" % (i, i)
+            page_list1.append(temp)
+
+        if self.current_page == self.num_pages:
+            next = "<li class='next'><a href='#'>下一页</a></li>"
+        else:
+            next = "<li class='next'><a href='/class_1?p=%s'>下一页</a></li>" % (self.current_page + 1,)
+        page_list1.append(next)
+
+        last = "<li class='last'><a href='/class_1?p=%s'>尾页</a></li>" % (self.num_pages,)
+        page_list1.append(last)
+
+        return ''.join(page_list1)
+
+    def page_str2(self):
+        page_list1 = []
         first = "<li class='first'><a href='/class_2?p=1'>首页</a></li>"
         page_list1.append(first)
 
@@ -82,7 +109,8 @@ class Pagination(object):
         page_list1.append(last)
 
         return ''.join(page_list1)
-    def page_str2(self):
+
+    def page_str3(self):
         page_list2 = []
 
         first = "<li class='first'><a href='/class_3?p=1'>首页</a></li>"
@@ -110,31 +138,60 @@ class Pagination(object):
         page_list2.append(last)
 
         return ''.join(page_list2)
-    def page_str3(self):
-        page_list3 = []
+
+    def page_str4(self):
+        page_list1 = []
+        first = "<li class='first'><a href='/class_4?p=1'>首页</a></li>"
+        page_list1.append(first)
+
+        if self.current_page == 1:
+            prev = "<li class='prev'><a href='#'>上一页</a></li>"
+        else:
+            prev = "<li class='prev'><a href='/class_4?p=%s'>上一页</a></li>" % (self.current_page - 1,)
+        page_list1.append(prev)
+        for i in self.pager_num_range():
+            if i == self.current_page:
+                temp = "<li class='active'><a href='/class_4?p=%s'>%s</a></li>" % (i, i)
+            else:
+                temp = "<li><a href='/class_4?p=%s'>%s</a></li>" % (i, i)
+            page_list1.append(temp)
+
+        if self.current_page == self.num_pages:
+            next = "<li class='next'><a href='#'>下一页</a></li>"
+        else:
+            next = "<li class='next'><a href='/class_4?p=%s'>下一页</a></li>" % (self.current_page + 1,)
+        page_list1.append(next)
+
+        last = "<li class='last'><a href='/class_4?p=%s'>尾页</a></li>" % (self.num_pages,)
+        page_list1.append(last)
+
+        return ''.join(page_list1)
+
+    def page_str5(self):
+        page_list2 = []
 
         first = "<li class='first'><a href='/class_5?p=1'>首页</a></li>"
-        page_list3.append(first)
+        page_list2.append(first)
 
         if self.current_page == 1:
             prev = "<li class='prev'><a href='#'>上一页</a></li>"
         else:
             prev = "<li class='prev'><a href='/class_5?p=%s'>上一页</a></li>" % (self.current_page - 1,)
-        page_list3.append(prev)
+        page_list2.append(prev)
         for i in self.pager_num_range():
             if i == self.current_page:
-                temp = "<li class='active'><a href='/class_4?p=%s'>%s</a></li>" % (i, i)
+                temp = "<li class='active'><a href='/class_5?p=%s'>%s</a></li>" % (i, i)
             else:
                 temp = "<li><a href='/class_5?p=%s'>%s</a></li>" % (i, i)
-            page_list3.append(temp)
+            page_list2.append(temp)
 
         if self.current_page == self.num_pages:
             next = "<li class='next'><a href='#'>下一页</a></li>"
         else:
             next = "<li class='next'><a href='/class_5?p=%s'>下一页</a></li>" % (self.current_page + 1,)
-        page_list3.append(next)
+        page_list2.append(next)
 
         last = "<li class='last'><a href='/class_5?p=%s'>尾页</a></li>" % (self.num_pages,)
-        page_list3.append(last)
+        page_list2.append(last)
 
-        return ''.join(page_list3)
+        return ''.join(page_list2)

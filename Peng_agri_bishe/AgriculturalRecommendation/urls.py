@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^admin/', admin.site.urls),
     url(r'^index/$', index, name='index'),
-    url(r'^news/$',news),
+    url(r'^news/$',class_1),
     url(r'^class_1/$', class_1), # 转到新闻类1
     url(r'^class_2/$', class_2), # 转到新闻类2
     url(r'^class_3/$', class_3), # 转到新闻类3

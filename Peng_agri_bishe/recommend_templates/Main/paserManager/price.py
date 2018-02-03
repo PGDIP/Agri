@@ -112,8 +112,8 @@ class Price():
         cookie = [item["name"] + "=" + item["value"] for item in driver.get_cookies()]
         # print cookie
         cookiestr = ';'.join(item for item in cookie)
-        li = [value + '\n', cookiestr + '\n']
-        with open(self.ROOT_PATH+r'\io\cookie.txt', 'w', encoding='utf-8') as f:
+        li = [value + '/n', cookiestr + '/n']
+        with open(self.ROOT_PATH+r'/io/cookie.txt', 'w', encoding='utf-8') as f:
             f.writelines(li)
 
         time.sleep(5)
@@ -121,7 +121,7 @@ class Price():
 
     def getCookie(self):
         list = []
-        with open(self.ROOT_PATH+r'\io\cookie.txt', 'r', encoding='utf-8') as f:
+        with open(self.ROOT_PATH+r'/io/cookie.txt', 'r', encoding='utf-8') as f:
             for item in f.readlines():
                 list.append(item.strip())
         return list

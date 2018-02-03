@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
+from mongoengine.queryset.visitor import Q
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse
 from django.http import JsonResponse
@@ -23,9 +25,198 @@ def index(request, data={}):
     # data = {"user_name":"jeje","user_pwd":"jeje"}
     # return HttpResponse("Hello world！ This is my first trial. [Poll的笔记]")
     # return Http404
-    user_name = request.session.get('user_name')
-    data["user_name"] = user_name
-    return render(request, ROOT_URL + "/recommend_templates/templates/homepage.html", {'data': data})  # 注意路径一定要写对
+    try:
+        current_page = request.GET.get('p')
+        user_name = request.session.get('user_name')
+        db_ans1 = page.objects.filter(Q(class_name__contains='要闻'))
+        db_ans2 = page.objects.filter(Q(class_name__contains='论坛'))
+        db_ans3 = page.objects.filter(Q(class_name__contains='种植技术'))
+        db_ans4 = page.objects.filter(Q(class_name__contains = '科技与健康'))
+        db_ans5 = page.objects.filter(Q(class_name__contains = '成果推介'))
+        db_ans6 = page.objects.filter(Q(title__contains='水稻'))
+        db_ans7 = page.objects.filter(Q(title__contains='玉米'))
+        db_ans8 = page.objects.filter(Q(title__contains='蔬菜'))
+        db_ans9 = page.objects.filter(Q(title__contains='小麦'))
+        data = {}
+        ans_list1 = []
+        ans_list2 = []
+        ans_list3 = []
+        ans_list4 = []
+        ans_list5 = []
+        ans_list6 = []
+        ans_list7 = []
+        ans_list8 = []
+        ans_list9 = []
+        count = 0
+        for i, news in enumerate(db_ans1, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list1.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+        count = 0
+        for i, news in enumerate(db_ans2, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list2.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+        count = 0
+        for i, news in enumerate(db_ans3, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list3.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+
+        count = 0
+        for i, news in enumerate(db_ans4, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list4.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+
+        count = 0
+        for i, news in enumerate(db_ans5, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list5.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+
+
+        count = 0
+        for i, news in enumerate(db_ans6, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list6.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+        count = 0
+        for i, news in enumerate(db_ans7, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list7.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+        count = 0
+        for i, news in enumerate(db_ans8, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list8.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+        count = 0
+        for i, news in enumerate(db_ans9, 0):
+            try:
+                content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
+                ans_list9.append({
+                    'content': content,
+                    "news": news,
+                })
+                count += 1
+            except:
+                continue
+
+
+
+
+        page_obj = Pagination(count, current_page)
+        data["news_list1"] = ans_list1[page_obj.start():page_obj.end()]
+        data["news_list2"] = ans_list2[page_obj.start():page_obj.end()]
+        data["news_list3"] = ans_list3[page_obj.start():page_obj.end()]
+        data["news_list4"] = ans_list4[page_obj.start():page_obj.end()]
+        data["news_list5"] = ans_list5[page_obj.start():page_obj.end()]
+        data["news_list6"] = ans_list6[page_obj.start():page_obj.end()]
+        data["news_list7"] = ans_list7[page_obj.start():page_obj.end()]
+        data["news_list8"] = ans_list8[page_obj.start():page_obj.end()]
+        data["news_list9"] = ans_list9[page_obj.start():page_obj.end()]
+
+        data["user_name"] = user_name
+
+
+
+        #主页天气模块
+        pred_min_list, pred_max_list = get_min_max_degree()
+        data_w = {};
+        ans_list_w = []
+        weather_list = paserWeather()  # [{},{},{},...]
+        for i, weather in enumerate(weather_list, 0):
+            if i >= 7: break;
+            ans_list_w.append({
+                "key": i,
+                "content": weather,
+            })
+        data["weather_data"] = ans_list_w
+        data["pred_max"] = ["%.2f" % (degree) for degree in pred_max_list[1:]]
+        data["pred_min"] = ["%.2f" % (degree) for degree in pred_min_list[1:]]
+
+
+
+
+    except:
+        return index(request)
+    return render(request, ROOT_URL + "/recommend_templates/templates/homepage.html",
+                  {'data': data, 'page_obj': page_obj})
 
 
 # 第一类新闻 农业新闻
@@ -34,13 +225,15 @@ def class_1(request, data={}):
     try:
         current_page = request.GET.get('p')
         user_name = request.session.get('user_name')
-        db_ans = page.objects.filter(class_name__contains='新闻|要闻|论坛')
+        db_ans = page.objects.filter(Q(class_name__contains = '要闻') | Q(class_name__contains = '论坛')| Q(class_name__contains = '新闻'))
         data = {}
         ans_list = []
         count = 0
         for i, news in enumerate(db_ans, 0):
             try:
                 content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
                 ans_list.append({
                     'content': content,
                     "news": news,
@@ -63,13 +256,15 @@ def class_2(request):
     try:
         current_page = request.GET.get('p')
         user_name = request.session.get('user_name')
-        db_ans = page.objects.filter(class_name__contains='植物保护技术')
+        db_ans = page.objects.filter(Q(class_name__contains = '植物保护技术'))
         data = {}
         ans_list = []
         count = 0
         for i, news in enumerate(db_ans, 0):
             try:
                 content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
                 ans_list.append({
                     'content': content,
                     "news": news,
@@ -97,13 +292,15 @@ def class_3(request):
     try:
         current_page = request.GET.get('p')
         user_name = request.session.get('user_name')
-        db_ans = page.objects.filter(class_name__contains='种植技术|种植业技术')
+        db_ans = page.objects.filter(Q(class_name__contains = '种植技术') | Q(class_name__contains = '种植业技术'))
         data = {}
         ans_list = []
         count = 0
         for i, news in enumerate(db_ans, 0):
             try:
                 content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
                 ans_list.append({
                     'content': content,
                     "news": news,
@@ -133,6 +330,8 @@ def class_4(request, data={}):
         for i, news in enumerate(db_ans, 0):
             try:
                 content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
                 ans_list.append({
                     'content': content,
                     "news": news,
@@ -155,13 +354,15 @@ def class_5(request, data={}):
     try:
         current_page = request.GET.get('p')
         user_name = request.session.get('user_name')
-        db_ans = page.objects.filter(class_name__contains='科技与健康|品种推荐|成果推荐')
+        db_ans = page.objects.filter(Q(class_name__contains = '科技与健康')| Q(class_name__contains = '成果推荐'))
         data = {}
         ans_list = []
         count = 0
         for i, news in enumerate(db_ans, 0):
             try:
                 content = str(news.content['content0'])
+                if news.content['content0'] == "":
+                    content = str(news.content['content1'])
                 ans_list.append({
                     'content': content,
                     "news": news,

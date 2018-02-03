@@ -73,22 +73,28 @@ class GZB():
     def dataHandle(self, dict={}):
         url = dict['url']
         class_name = dict['class_name']
-        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'r') as f:
+        with open(self.ROOT_PATH + r'/io/isExistUrl.txt', 'r') as f:
             if url in f.readline():
                 print('...................已经爬取过了..............')
             else:
                 html = self.util.getHtml(url, 3, 6, str(random.choice(self.ci.proxyIp())).strip())  # 分别是 url，超时时间，重复几次
-                key = re.compile(
-                    r'<div class="bm vw">.*?<h1 class="ph">(.*?) </h1>.*?<td id="article_content">(.*?)</td>.*?</div>',
-                    re.S)
+                key = re.compile(r'<div class="bm vw">.*?<h1 class="ph">(.*?) </h1>.*?<td id="article_content">(.*?)</td>.*?</div>',re.S)
                 result = self.util.getData(html=html, key=key, flag=1)
-                title = result[0][0]  ########################
+                title = ''
+                try:
+                    title = result[0][0]  ########################
+                except:
+                    pass
                 title_pattern = re.compile(u'视频|实拍', re.S)
                 if page.objects.filter(title=title) or re.findall(title_pattern, str(title)):
-                    print('%s___标题为 %s ......已经存在.......' % (class_name, title))
+                    print('%s___标题为 %s ......已经存在或是视频、实拍.......' % (class_name, title))
                     time.sleep(3)
                 else:
-                    content = result[0][1]
+                    content = ''
+                    try:
+                        content = result[0][1]
+                    except:
+                        pass
                     # 去除 script
                     soup = BeautifulSoup(content, "html.parser")
                     try:
@@ -106,39 +112,48 @@ class GZB():
                         if img_soup.find("img"):
                             imgUrl = self.baseUrl + soup.find("img")['src']
                             # fileName = 'image' + imgUrl.split('/')[-1]  # 'img' + imgUrl[62:72] + str(index) + '.jpg'
-                            data['image' + str(index)] = imgUrl  # self.util.saveImg(imgUrl, fileName)
+                            res = requests.get(imgUrl)
+                            if res.status_code == 200:
+                                data['image' + str(index)] = imgUrl  # self.util.saveImg(imgUrl, fileName)
+                            else:
+                                continue
                             # print(imgUrl)
                         else:
                             data['content' + str(index)] = (item.get_text()).strip()
 
+                    count_empty = 0
+                    for key in data:
+                        if data[key] == 'None':
+                            count_empty += 1
                     article = page.objects(pageId=pageId).first()
-                    if article.content == {}:
+                    if (data == {}) or (count_empty >= 1):
                         article.delete()
                     else:
                         print('正在存储.....%s___%s' % (class_name, title))
                         page.objects(title=title, class_name=class_name, pageId=pageId).update(content=data)
-                        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'a+') as f:
+                        with open(self.ROOT_PATH + r'/io/isExistUrl.txt', 'a+') as f:
                             f.writelines(url + ' , ')
-        time.sleep(3)
+                    time.sleep(3)
 
     # 得到分类网址
     def get_url_list(self):
         util = HttpUtil(url=self.baseUrl, headers=self.head, code='gbk')
         html = util.getHtml(self.baseUrl, 3, 6)
         soup = BeautifulSoup(html, 'lxml')
-        data = soup.find_all('ul', class_='p_pop h_pop')
-        pattern = re.compile(u'.*?视频|作用|大全.*?', re.S)
+        #data = soup.find_all('ul', class_='p_pop h_pop')
+        pattern = re.compile(u'.*?视频|作用|大全|问答.*?', re.S)
         urllist = []
-        for item in data:
-            for li in item:
-                if re.findall(pattern, str(li)):
-                    continue
-                else:
-                    urldict = {}  # 每次进入循环重新定义 字典，全局的话会被不断替换
-                    urldict['a'] = li.a['href']
-                    urldict['name'] = li.a.get_text()
-                    # print(li.a['href'], li.a.get_text())
-                    urllist.append(urldict)
+        # for item in data:
+        #     for li in item:
+        #         if re.findall(pattern, str(li)):
+        #             continue
+        #         else:
+        #             urldict = {}  # 每次进入循环重新定义 字典，全局的话会被不断替换
+        #             urldict['a'] = li.a['href']
+        #             urldict['name'] = li.a.get_text()
+        #             # print(li.a['href'], li.a.get_text())
+        #             urllist.append(urldict)
+        # print(urllist,'/////////////')
         data1 = soup.find_all('div', id='nv')
         soup_data1 = BeautifulSoup(str(data1), 'lxml')
         a = soup_data1.find_all('a')
@@ -151,7 +166,6 @@ class GZB():
                 urldict['name'] = item.get_text()
                 # print(item['href'],item.get_text())
                 urllist.append(urldict)
-        # print(urllist)
         return urllist
 
     # 得到全部文章内容
@@ -166,7 +180,12 @@ class GZB():
     def add_thread(self, urllist=[]):  # 加入线程
         print('主进程:', os.getpid(), '<<<类名:', urllist['name'], '<<<地址:', urllist['a'])
         list = []
-        for page_num in range(1, 300):
+        html = self.util.getHtml(urllist['a'], 3, 6)
+        soup = BeautifulSoup(str(html),'lxml')
+        div = soup.find('div',class_= 'pg')
+        page_pattern = re.compile(r'<span title=.*?> / (.*?) 页</span>')
+        num = re.findall(page_pattern,str(div))[0]
+        for page_num in range(200, int(num)):
             dict = {}
             dict['class_name'] = urllist['name']
             dict['page_url'] = urllist['a'] + 'index.php?page=' + str(page_num)
@@ -186,8 +205,7 @@ class GZB():
         class_name = dict['class_name']  # 类名
         page_url = dict['page_url']  # 每一页的地址
         key = re.compile(r'<dt class="xs2">.*?<a href="(.*?)".*?>.*?</a>.*?</dt>', re.S)
-        page_html = self.util.getHtml(page_url, 3, 6, str(
-            random.choice(self.ci.proxyIp())).strip())  # requests.get(page_url, headers=self.head)
+        page_html = self.util.getHtml(page_url, 3, 6, str(random.choice(self.ci.proxyIp())).strip())  # requests.get(page_url, headers=self.head)
         url_data = self.util.getData(str(page_html), key, flag=1)
         all_url = []
         for url in url_data:
@@ -306,7 +324,7 @@ class ZGNYKJ():
         url = dict['url']
         class_name = dict['class_name']
         title = dict['title']
-        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'r') as f:
+        with open(self.ROOT_PATH + r'/io/isExistUrl.txt', 'r') as f:
             if url in f.readline():
                 print('...................已经爬取过了..............')
             else:
@@ -372,8 +390,15 @@ class ZGNYKJ():
                                 imgurl = self.baseUrl + imgurl[6:]
                             # imgName = 'image' + imgurl.split('/')[-1]
                             # imagePath = self.util.saveImg(imgurl, imgName)
-                            contentDict['image' + str(index)] = imgurl  # imagePath
-                            imageCount += 1
+
+                            res = requests.get(imgurl)
+                            if res.status_code == 200:
+                                contentDict['image' + str(index)] = imgurl  # imagePath
+                                imageCount += 1			    
+                            else:
+                                continue
+
+                            
 
 
                     if contentListP:
@@ -402,15 +427,19 @@ class ZGNYKJ():
                     for key, value in contentDict.items():
                         resultDict[key] = value
 
+                    count_empty = 0
+                    for key in resultDict:
+                        if resultDict[key] == 'None':
+                            count_empty += 1
                     article = page.objects(pageId=pageId).first()
-                    if article.content == {}:
+                    if (resultDict == {}) or (count_empty >= 1):
                         article.delete()
                     else:
                         print('正在存储......', 'class_name:', class_name, ' title:', title)
                         page.objects(title=title, class_name=class_name, pageId=pageId).update(content=resultDict)
                         # cate.save()
                         self.contentCount.append(url)
-                        with open(self.ROOT_PATH + r'\io\isExistUrl.txt', 'a+') as f:
+                        with open(self.ROOT_PATH + r'/io/isExistUrl.txt', 'a+') as f:
                             f.writelines(url + ' , ')
         time.sleep(3)
 

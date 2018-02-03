@@ -15,14 +15,14 @@
                     </div>
                     <div class="articles">{{ news.content }}</div>
                 </dd>
-                <dd> 分类: <label><a class="xi2">市场价格</a></label>&nbsp;&nbsp;
+                <dd> 分类: <label><a class="xi2">{{ news.news.class_name }}</a></label>&nbsp;&nbsp;
                 </dd>
             </dl>
         {% endfor %}
         <div class="pgs c1">
             <div class="pg">
                 <ul class="pagination pagination-sm">
-                    {{ page_obj.page_str2|safe }}
+                    {{ page_obj.page_str4|safe }}
                 </ul>
             </div>
         </div>

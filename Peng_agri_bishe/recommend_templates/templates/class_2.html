@@ -15,7 +15,7 @@
                     </div>
                     <div class="articles">{{ news.content }}</div>
                 </dd>
-                <dd> 分类: <label><a class="xi2">病虫害</a></label>&nbsp;&nbsp;
+                <dd> 分类: <label><a class="xi2">{{ news.news.class_name }}</a></label>&nbsp;&nbsp;
                 </dd>
             </dl>
         {% endfor %}
